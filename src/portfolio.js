@@ -32,7 +32,7 @@ const Portfolio = () => {
               
               <h4>Une anecdote marquante</h4>
               <p>
-                Mon stage en tant qu'Administrateur Système et Réseau chez CM-MP a été un déclic. Pour la première fois, je gérais de véritables infrastructures informatiques, configurais des serveurs et intervenais sur des problématiques de sécurité réelles[cite: 1]. Cette immersion a forgé ma confiance technique et confirmé mon ambition de devenir Pentester[cite: 1].
+                Mon stage chez CM-MP en deuxième année, c'est vraiment là que tout a cliqué pour moi. Pour la première fois, j'ai eu affaire à de vraies infrastructures informatiques : gérer des serveurs en production, configurer des réseaux, intervenir sur des incidents de sécurité réels. Pas du labo, du vrai travail qui a du poids. Ça m'a donné confiance en mes compétences techniques et a confirmé que je voulais faire de la cybersécurité — pas juste en théorie, mais en vrai.
               </p>
             </div>
 
@@ -102,28 +102,28 @@ const Portfolio = () => {
               <span className="badge-year">Stage 2ème Année</span>
               <h4>CM-MP (Nanterre) — Administrateur Système et Réseau</h4>
               <p><em>Du 27 janvier au 21 février 2025</em></p>
-              <h5 className="sub-tagline">Comment mon stage m’a ouvert les yeux sur la cybersécurité[cite: 1]</h5>
+              <h5 className="sub-tagline">Mon premier vrai contact avec la cybersécurité en entreprise</h5>
               
               <p>
-                Pour ma deuxième année de BUT Informatique à l’IUT de Villetaneuse, j’ai eu la chance d’effectuer un stage chez CM-MP (68 avenue des Guilleraies, 92000 Nanterre) en tant qu’Administrateur Système et Réseau[cite: 1].
+                Pour ma deuxième année de BUT, j'ai eu l'opportunité de stager chez CM-MP à Nanterre. Clairement, c'est un stage qui m'a ouvert les yeux sur ce que représente vraiment la cybersécurité en tant que métier.
               </p>
               <p>
-                Ce stage a vraiment été un <strong>déclic pour moi</strong> : c’est la première fois que j’ai pu vivre de l’intérieur la sécurité informatique sur le terrain, en équipe, avec des responsabilités concrètes[cite: 1]. Je me suis rendu compte que la cybersécurité, ce n’est pas juste une affaire de firewall ou d’outils : c’est toute une vision, un état d’esprit, où chaque détail compte pour protéger les données et les systèmes des clients[cite: 1].
-              </p>
-              
-              <h4>Missions et compétences de terrain</h4>
-              <p>
-                J’ai pu intervenir sur la gestion des serveurs, l’installation et la configuration de solutions comme <strong>VMware ESXi</strong>, la gestion des réseaux, la configuration de <strong>VPN</strong>, la mise en place de systèmes de reconnaissance faciale et la réponse aux incidents de sécurité[cite: 1]. En étant en contact direct avec les clients (TPE et PME), j’ai compris l’importance de l’écoute, de la pédagogie et de la rigueur dans notre métier[cite: 1].
+                Ce qui m'a le plus marqué, c'est d'avoir enfin vu la sécurité informatique de l'intérieur : pas théorique, mais concret. Je me suis rendu compte que la sécu, ce n'est pas qu'une question de firewall ou d'antivirus — c'est une mentalité, une approche où chaque détail compte quand tu dois protéger les données et les systèmes de vrais clients.
               </p>
               
-              <h4>Esprit d'équipe & Évolution</h4>
+              <h4>Ce que j'ai vraiment fait</h4>
               <p>
-                Travailler dans une équipe soudée, où tout le monde est prêt à partager ses connaissances et à s’entraider, a renforcé mon envie de m’investir à fond dans la cybersécurité[cite: 1]. Ce stage m’a aussi montré que ce secteur est en évolution permanente et qu’il demande une vraie curiosité intellectuelle : chaque journée apportait son lot de nouveaux défis, que ce soit une configuration réseau à sécuriser, une tentative d’intrusion à analyser, ou un serveur à mettre en production[cite: 1].
+                J'ai pu mettre les mains dans les baies de serveurs : configuration de VMware ESXi, gestion des réseaux, mise en place de VPN, installation de systèmes de reconnaissance faciale, et réaction à des incidents de sécurité en direct. Ce qui m'a marqué aussi, c'est le contact avec les clients — des PME et TPE — où j'ai compris l'importance d'être à l'écoute, de savoir expliquer les choses simplement et d'être rigoureux dans son travail.
+              </p>
+              
+              <h4>L'ambiance, l'équipe</h4>
+              <p>
+                L'équipe chez CM-MP était vraiment soudée. Tout le monde avait le réflexe de partager ses connaissances et de s'entraider. Ça m'a conforté dans mon envie de faire carrière en cybersécurité. Et franchement, ce stage m'a montré que ce secteur est en perpétuelle évolution : chaque jour c'était quelque chose de nouveau — une config réseau à sécuriser, une tentative d'intrusion à analyser, un serveur à déployer en production.
               </p>
 
-              <h4>Bilan personnel</h4>
+              <h4>Bilan honnête</h4>
               <p>
-                Honnêtement, <strong>j’ai kiffé !</strong> Je me suis senti utile, valorisé, et j’ai gagné en confiance : ce stage a confirmé que je voulais vraiment faire carrière dans la cybersécurité, avec une vraie passion pour les systèmes, la gestion des risques et la protection des infrastructures informatiques[cite: 1]. Un grand merci à toute l’équipe CM-MP pour leur accueil, leur bienveillance et la qualité de l’encadrement. Ce stage restera une expérience marquante de mon parcours[cite: 1] !
+                J'ai vraiment aimé. Je me suis senti utile, j'ai gagné en confiance et ce stage a verrouillé ma décision : je veux faire de la cybersécurité, point. Pas seulement par passion théorique, mais parce que j'ai vu que c'était un métier où tu fais vraiment la différence. Un grand merci à toute l'équipe CM-MP pour m'avoir accueilli comme ça, pour leur bienveillance et pour la qualité de l'encadrement. C'est une expérience que je n'oublierai pas.
               </p>
 
               <div className="tags" style={{ marginBottom: '2rem' }}>
@@ -135,28 +135,28 @@ const Portfolio = () => {
               </div>
 
               {/* Galerie Photos avec tes fichiers */}
-              <h4>Galerie Médias — Équipements et Supervision</h4>
+              <h4>Galerie Médias — Équipements et Infrastructure</h4>
               <div className="image-gallery">
                 <div className="gallery-item">
                   <img src={`${process.env.PUBLIC_URL}/IMG_2967.jpg`} alt="Serveur rack ouvert" />
-                  <span className="image-caption">Maintenance matérielle et inspection des composants internes d'un serveur[cite: 1]</span>
+                  <span className="image-caption">Maintenance des serveurs et inspection des composants internes</span>
                 </div>
                 <div className="gallery-item">
                   <img src={`${process.env.PUBLIC_URL}/IMG_2906.jpg`} alt="Baie informatique IBM" />
-                  <span className="image-caption">Gestion de l'armoire réseau et des baies de stockage IBM[cite: 1]</span>
+                  <span className="image-caption">Gestion de l'armoire réseau et des baies de stockage IBM</span>
                 </div>
                 <div className="gallery-item">
                   <img src={`${process.env.PUBLIC_URL}/IMG_2981.jpg`} alt="Console VMware ESXi et câblage" />
-                  <span className="image-caption">Configuration des switchs, câblage de la baie et déploiement de l'hyperviseur VMware ESXi[cite: 1]</span>
+                  <span className="image-caption">Configuration des switchs et déploiement de l'hyperviseur VMware ESXi</span>
                 </div>
               </div>
 
               {/* Contacts d'encadrement */}
               <div className="supervision-box">
-                <h5>Encadrement et Contacts :</h5>
+                <h5>Encadrement :</h5>
                 <ul>
-                  <li><strong>Tuteur en entreprise :</strong> M. Stéphane Eveillard (aco@cm-mp.fr — 01 80 70 60 00)[cite: 1]</li>
-                  <li><strong>Maître de stage :</strong> Mme. Haifa Zargayouna (haifa.zargayouna@lipn.univ-paris13.fr)[cite: 1]</li>
+                  <li><strong>Tuteur en entreprise :</strong> M. Stéphane Eveillard (aco@cm-mp.fr — 01 80 70 60 00)</li>
+                  <li><strong>Maître de stage :</strong> Mme. Haifa Zargayouna (haifa.zargayouna@lipn.univ-paris13.fr)</li>
                 </ul>
               </div>
             </div>
@@ -266,7 +266,7 @@ const Portfolio = () => {
               <div className="card">
                 <h4>Cybersécurité, Réseau & DevOps</h4>
                 <ul>
-                  <li><strong>Systèmes :</strong> Linux, Windows Server, VMware ESXi[cite: 1]</li>
+                  <li><strong>Systèmes :</strong> Linux, Windows Server, VMware ESXi</li>
                   <li><strong>Sécurité :</strong> Kali Linux, Wireshark, Nmap, SQLMap, pfSense</li>
                   <li><strong>Outils Pro :</strong> Git/GitHub, Docker, Jenkins, Ansible, Méthodes Agiles (TDD/BDD)</li>
                 </ul>
