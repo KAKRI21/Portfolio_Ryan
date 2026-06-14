@@ -12,7 +12,6 @@ const Portfolio = () => {
             <h3>Présentation Personnelle</h3>
             <div className="card">
               <div className="presentation-header">
-                {/* Correction dynamique du chemin pour GitHub Pages */}
                 <img 
                   src={`${process.env.PUBLIC_URL}/photo-ryan.jpg`} 
                   alt="Ryan Agin" 
@@ -64,8 +63,11 @@ const Portfolio = () => {
       case 'stage':
         return (
           <div className="section-content">
-            <h3>Stage BUT 3 : Immersion Professionnelle</h3>
+            <h3>Expériences en Stage (BUT Informatique)</h3>
+            
+            {/* STAGE BUT 3 */}
             <div className="card">
+              <span className="badge-year">BUT 3</span>
               <h4>Auto-école MILAR (Sarcelles) — Développeur Python / Automatisation</h4>
               <p><em>Du 18 mai au 18 septembre 2026</em></p>
               <p><strong>Mission :</strong> Développement d'un bot haute performance de réservation automatique de places d'examen de conduite sur la plateforme gouvernementale (pro.permisdeconduire.gouv.fr).</p>
@@ -84,7 +86,7 @@ const Portfolio = () => {
 
               <h4>Culture d'entreprise & Bilan personnel</h4>
               <p>J'ai évolué dans une ambiance familiale très agréable, avec un point quotidien avec la direction (approche Agile). J'ai découvert ma capacité à ne jamais abandonner face à des blocages sévères. Ce stage m'a appris à analyser méthodiquement les trames réseau plutôt que de tâtonner dans le code.</p>
-              <p><strong>Ce dont je suis le plus fier :</strong> Avoir livré un bot robuste, en production, qui tourne réellement pour l'auto-école et réserve des places en moins de 200 millisecondes avec une architecture propre.</p>
+              <p style={{ marginBottom: '1.5rem' }}><strong>Ce dont je suis le plus proud :</strong> Avoir livré un bot robuste, en production, qui tourne réellement pour l'auto-école et réserve des places en moins de 200 millisecondes avec une architecture propre.</p>
 
               <div className="tags">
                 <span className="tag">Python</span>
@@ -95,8 +97,76 @@ const Portfolio = () => {
               </div>
             </div>
 
+            {/* STAGE BUT 2 */}
             <div className="card">
-              <h4>Témoignage Professionnel</h4>
+              <span className="badge-year">BUT 2</span>
+              <h4>CM-MP (Nanterre) — Administrateur Système et Réseau</h4>
+              <p><em>Du 27 janvier au 21 février 2025</em></p>
+              <h5 className="sub-tagline">Comment mon stage m’a ouvert les yeux sur la cybersécurité</h5>
+              
+              <p>
+                Pour ma deuxième année de BUT Informatique à l’IUT de Villetaneuse, j’ai effectué un stage marquant chez CM-MP. Ce stage a vraiment été un <strong>déclic majeur</strong> : c’est la première fois que j’ai pu vivre de l’intérieur la sécurité informatique sur le terrain, en équipe, avec des responsabilités concrètes. Je me suis rendu compte que la cybersécurité, ce n’est pas juste une affaire de firewall ou d’outils : c’est toute une vision, un état d’esprit, où chaque détail compte pour protéger les données et les systèmes des clients.
+              </p>
+              
+              <h4>Missions et Réalisations Techniques</h4>
+              <p>
+                J’ai eu l'opportunité d'intervenir sur des infrastructures critiques et de manipuler du matériel professionnel en production :
+              </p>
+              <ul>
+                <li><strong>Gestion et déploiement de serveurs :</strong> Installation, configuration et administration fine de solutions de virtualisation bare-metal avec <strong>VMware ESXi</strong>.</li>
+                <li><strong>Réseau & Sécurisation :</strong> Gestion des architectures réseaux, configuration et sécurisation de liaisons cryptées <strong>VPN</strong> pour le travail distant.</li>
+                <li><strong>Systèmes Biométriques & Surveillance :</strong> Mise en place et intégration de systèmes de sécurité par reconnaissance faciale.</li>
+                <li><strong>SecOps :</strong> Surveillance active des flux, analyse des alertes et participation directe à la réponse aux incidents de sécurité.</li>
+              </ul>
+
+              <h4>Immersion terrain & Pédagogie client</h4>
+              <p>
+                En étant en contact direct avec les clients (essentiellement des TPE et PME), j’ai compris l’importance cruciale de l’écoute, de la pédagogie et d’une rigueur absolue dans notre métier. Chaque journée apportait son lot de nouveaux défis stimulants, qu'il s'agisse d'une configuration réseau à sécuriser, d'une tentative d'intrusion à analyser méticuleusement ou d'un nouveau serveur physique à intégrer en production.
+              </p>
+
+              <h4>Bilan personnel</h4>
+              <p>
+                Honnêtement, <strong>j’ai kiffé !</strong> Travailler au sein de cette équipe soudée et bienveillante m'a permis de me sentir utile, pleinement valorisé et de gagner une solide confiance en mes compétences. Ce stage a confirmé de manière définitive mon ambition professionnelle : faire carrière dans la cybersécurité, poussé par une réelle passion pour l'ingénierie des systèmes, la gestion des risques et la protection des infrastructures informatiques.
+              </p>
+
+              <div className="tags" style={{ marginBottom: '2rem' }}>
+                <span className="tag">VMware ESXi</span>
+                <span className="tag">Administration Système</span>
+                <span className="tag">VPN & Routage</span>
+                <span className="tag">Sécurité Périmétrique</span>
+                <span className="tag">Incident Response</span>
+              </div>
+
+              {/* Galerie photos du stage BUT 2 */}
+              <h4>Galerie Photo — Immersion dans l'infrastructure CM-MP</h4>
+              <div className="image-gallery">
+                <div className="gallery-item">
+                  <img src={`${process.env.PUBLIC_URL}/IMG_2967.jpg`} alt="Architecture interne d'un serveur rack ouvert lors d'une intervention matérielle" />
+                  <span className="image-caption">Maintenance physique et inspection des composants d'un serveur Rack</span>
+                </div>
+                <div className="gallery-item">
+                  <img src={`${process.env.PUBLIC_URL}/IMG_2906.jpg`} alt="Baie informatique d'infrastructure avec équipements de stockage et serveurs IBM" />
+                  <span className="image-caption">Gestion de la baie système et des unités de sauvegarde centralisées IBM</span>
+                </div>
+                <div className="gallery-item">
+                  <img src={`${process.env.PUBLIC_URL}/IMG_2981.jpg`} alt="Console d'administration système connectée à un serveur de virtualisation VMware ESXi" />
+                  <span className="image-caption">Déploiement et configuration de l'hyperviseur VMware ESXi sur le nœud réseau</span>
+                </div>
+              </div>
+
+              {/* Contacts et encadrement */}
+              <div className="supervision-box">
+                <h5>Encadrement Professionnel & Pédagogique :</h5>
+                <ul>
+                  <li><strong>Tuteur en entreprise :</strong> M. Stéphane Eveillard (CM-MP) — <a href="mailto:aco@cm-mp.fr">aco@cm-mp.fr</a> | 01 80 70 60 00</li>
+                  <li><strong>Maître de stage universitaire :</strong> Mme. Haifa Zargayouna (IUT Villetaneuse / LIPN) — <a href="mailto:haifa.zargayouna@lipn.univ-paris13.fr">haifa.zargayouna@lipn.univ-paris13.fr</a></li>
+                </ul>
+              </div>
+            </div>
+
+            {/* TEMOIGNAGE GLOBAL */}
+            <div className="card">
+              <h4>Témoignage Professionnel (Milar)</h4>
               <blockquote className="testimonial">
                 "Durant ses 4 mois de stage au sein de notre agence, Ryan a fait preuve d'un professionnalisme exemplaire. C'est un jeune homme sérieux, ponctuel et doté d'un excellent sens relationnel. Bien qu'autonome sur la conception technique, il a su parfaitement s'intégrer à l'équipe et communiquer clairement. Les retours sur son travail sont très positifs, et son attitude a été irréprochable. Nous recommandons vivement son profil."
                 <span className="testimonial-author">— Hélène Aydin, Secrétaire & Référente RH (Europermis, Sarcelles)</span>
@@ -297,7 +367,7 @@ const Portfolio = () => {
 
       <nav className="nav-tabs">
         <button className={`tab-button ${activeTab === 'accueil' ? 'active' : ''}`} onClick={() => setActiveTab('accueil')}>À propos & Culture</button>
-        <button className={`tab-button ${activeTab === 'stage' ? 'active' : ''}`} onClick={() => setActiveTab('stage')}>Stage BUT 3</button>
+        <button className={`tab-button ${activeTab === 'stage' ? 'active' : ''}`} onClick={() => setActiveTab('stage')}>Stages Éléments</button>
         <button className={`tab-button ${activeTab === 'sae' ? 'active' : ''}`} onClick={() => setActiveTab('sae')}>Projets SAÉ</button>
         <button className={`tab-button ${activeTab === 'perso' ? 'active' : ''}`} onClick={() => setActiveTab('perso')}>Projets Persos</button>
         <button className={`tab-button ${activeTab === 'competences' ? 'active' : ''}`} onClick={() => setActiveTab('competences')}>Compétences & Auto-évaluation</button>
