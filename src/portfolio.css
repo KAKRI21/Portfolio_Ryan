@@ -140,7 +140,7 @@ h4 {
   margin-bottom: 0.5rem;
 }
 
-/* === NOUVEAU : PHOTO DE PROFIL === */
+/* Alignement Photo + Description */
 .presentation-header {
   display: flex;
   align-items: flex-start;
@@ -175,7 +175,7 @@ h4 {
   border: 1px solid rgba(0, 207, 255, 0.2);
 }
 
-/* Tableaux */
+/* Tableaux (Auto-évaluation) */
 .eval-table {
   width: 100%;
   border-collapse: collapse;
