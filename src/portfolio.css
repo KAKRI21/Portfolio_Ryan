@@ -1,13 +1,15 @@
-/* Variables de couleurs et polices */
+/* Variables */
 :root {
   --bg-color: #05070c;
   --card-bg: #111520;
+  --card-hover: #1a2235;
   --text-main: #e2e8f0;
   --text-muted: #94a3b8;
   --accent: #00cfff;
+  --accent-hover: #009ac2;
+  --border-color: #1e293b;
   --font-title: 'Space Grotesk', sans-serif;
   --font-text: 'Inter', sans-serif;
-  --font-code: 'JetBrains Mono', monospace;
 }
 
 body {
@@ -15,115 +17,130 @@ body {
   color: var(--text-main);
   font-family: var(--font-text);
   line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
 .portfolio-container {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 2rem;
 }
 
-/* Typographie */
-h1, h2, h3 {
-  font-family: var(--font-title);
-  color: #ffffff;
+/* En-tête globale */
+.main-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
 }
 
-h2 {
-  font-size: 2rem;
-  border-bottom: 2px solid var(--card-bg);
-  padding-bottom: 0.5rem;
-  margin-top: 3rem;
-  margin-bottom: 1.5rem;
-}
-
-.text-accent {
-  color: var(--accent);
-}
-
-.font-code {
-  font-family: var(--font-code);
-}
-
-/* En-tête / Hero Section */
-.hero {
-  text-align: left;
-  padding: 4rem 0;
-  border-bottom: 1px solid var(--card-bg);
-}
-
-.hero h1 {
-  font-size: 3.5rem;
+.main-header h1 {
+  font-size: 2.8rem;
   margin: 0 0 0.5rem 0;
+  color: #fff;
+  font-family: var(--font-title);
 }
 
-.hero h2 {
-  border: none;
-  font-size: 1.5rem;
-  color: var(--text-muted);
-  margin: 0 0 1.5rem 0;
-  padding: 0;
+.main-header h2 {
+  font-size: 1.2rem;
+  color: var(--accent);
+  margin: 0 0 1rem 0;
+  font-weight: normal;
 }
 
-.typewriter {
-  display: inline-block;
-  border-right: 3px solid var(--accent);
-  padding-right: 5px;
-  animation: blink 1s step-end infinite;
-}
-
-.contact-links {
+.contact-bar {
   display: flex;
+  justify-content: center;
   gap: 1.5rem;
   flex-wrap: wrap;
 }
 
-.contact-links a {
-  color: var(--accent);
+.contact-bar a, .contact-bar span {
+  color: var(--text-muted);
   text-decoration: none;
-  font-family: var(--font-code);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.contact-bar a:hover {
+  color: var(--accent);
+}
+
+/* Navigation par onglets */
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.tab-button {
+  background-color: var(--card-bg);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
   transition: all 0.3s ease;
 }
 
-.contact-links a:hover {
-  text-shadow: 0 0 8px rgba(0, 207, 255, 0.5);
+.tab-button:hover {
+  background-color: var(--card-hover);
+  border-color: var(--accent);
 }
 
-/* Cartes (Expériences & Projets) */
+.tab-button.active {
+  background-color: var(--accent);
+  color: #000;
+  border-color: var(--accent);
+}
+
+/* Contenu des sections */
+.section-content {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-top: 0;
+  border-left: 4px solid var(--accent);
+  padding-left: 1rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+  color: var(--accent);
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .card {
   background-color: var(--card-bg);
-  padding: 1.5rem;
+  padding: 1.5rem 2rem;
   border-radius: 8px;
+  border: 1px solid var(--border-color);
   margin-bottom: 1.5rem;
-  border: 1px solid transparent;
-  transition: border-color 0.3s ease;
 }
 
-.card:hover {
-  border-color: rgba(0, 207, 255, 0.3);
+.card ul {
+  padding-left: 1.5rem;
 }
 
-.card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  flex-wrap: wrap;
-  margin-bottom: 1rem;
+.card li {
+  margin-bottom: 0.5rem;
 }
 
-.card-header h3 {
-  margin: 0;
-  font-size: 1.3rem;
-}
-
-.date {
-  color: var(--text-muted);
-  font-family: var(--font-code);
-  font-size: 0.9rem;
-}
-
-/* Tags de compétences */
+/* Tags */
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -134,44 +151,42 @@ h2 {
 .tag {
   background-color: rgba(0, 207, 255, 0.1);
   color: var(--accent);
-  padding: 0.2rem 0.6rem;
+  padding: 0.3rem 0.8rem;
   border-radius: 4px;
-  font-family: var(--font-code);
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   border: 1px solid rgba(0, 207, 255, 0.2);
 }
 
-/* Grille de compétences */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+/* Tableaux (pour l'auto-évaluation) */
+.eval-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
 }
 
-.skill-category h3 {
-  font-size: 1.1rem;
-  color: var(--text-main);
-  margin-bottom: 0.8rem;
+.eval-table th, .eval-table td {
+  border: 1px solid var(--border-color);
+  padding: 1rem;
+  text-align: left;
 }
 
-.skill-category ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  color: var(--text-muted);
+.eval-table th {
+  background-color: var(--card-bg);
+  color: var(--accent);
+  font-weight: bold;
 }
 
-.skill-category li {
-  margin-bottom: 0.4rem;
+.eval-table td {
+  background-color: rgba(17, 21, 32, 0.5);
 }
 
 /* Témoignage */
 .testimonial {
   font-style: italic;
-  padding: 2rem;
-  border-left: 4px solid var(--accent);
+  padding: 1.5rem;
   background-color: var(--card-bg);
-  margin-top: 2rem;
+  border-left: 4px solid var(--accent);
+  margin: 1.5rem 0;
   border-radius: 0 8px 8px 0;
 }
 
@@ -180,18 +195,25 @@ h2 {
   margin-top: 1rem;
   font-style: normal;
   font-weight: bold;
-  color: var(--text-main);
+  color: #fff;
 }
 
-/* Responsive */
+/* Grille */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
 @media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.5rem;
+  .grid-2 {
+    grid-template-columns: 1fr;
   }
-  .card-header {
+  .nav-tabs {
     flex-direction: column;
   }
-  .date {
-    margin-top: 0.5rem;
+  .tab-button {
+    width: 100%;
+    text-align: center;
   }
 }
