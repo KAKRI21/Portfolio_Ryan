@@ -40,7 +40,7 @@ const Portfolio = () => {
             <div className="grid-2">
               <div className="card">
                 <h4>Événements & Pratique (CTF)</h4>
-                <p>Visant une spécialisation en Pentest, je m'entreîne intensivement sur TryHackMe, Root-Me et Hack The Box. Je participe à des CTF (Capture The Flag) pour pratiquer l'intrusion éthique et le reverse engineering. Je me rends aussi régulièrement à des salons informatiques pour échanger avec des experts et voir des démonstrations industrielles.</p>
+                <p>Visant une spécialisation en Pentest, je m'entraîne intensivement sur TryHackMe, Root-Me et Hack The Box. Je participe à des CTF (Capture The Flag) pour pratiquer l'intrusion éthique et le reverse engineering. Je me rends aussi régulièrement à des salons informatiques pour échanger avec des experts et voir des démonstrations industrielles.</p>
               </div>
               <div className="card">
                 <h4>Veille Technologique</h4>
@@ -134,7 +134,7 @@ const Portfolio = () => {
                 <span className="tag">Sécurité Système</span>
               </div>
 
-              {/* Galerie Photos avec tes fichiers */}
+              {/* Galerie Photos */}
               <h4>Galerie Médias — Équipements et Supervision</h4>
               <div className="image-gallery">
                 <div className="gallery-item">
@@ -151,7 +151,7 @@ const Portfolio = () => {
                 </div>
               </div>
 
-              {/* Contacts d'encadrement */}
+              {/* Contacts */}
               <div className="supervision-box">
                 <h5>Encadrement et Contacts :</h5>
                 <ul>
@@ -161,7 +161,6 @@ const Portfolio = () => {
               </div>
             </div>
 
-            {/* Témoignage Europermis */}
             <div className="card">
               <h4>Témoignage Professionnel</h4>
               <blockquote className="testimonial">
@@ -176,19 +175,10 @@ const Portfolio = () => {
         return (
           <div className="section-content">
             <h3>Projets Universitaires (SAÉ)</h3>
-            
             <div className="card">
               <h4>SAÉ S5 : MIAAM (App Mobile Anti-Gaspillage)</h4>
               <p><strong>Contexte :</strong> Conception d'une application intelligente proposant des recettes sur mesure pour réduire le gaspillage alimentaire (Slogan : "Réduire le gaspillage, un repas à la fois").</p>
               <p><strong>Mon rôle :</strong> Co-conception de l'identité visuelle et développement de la logique métier (organisation et profils utilisateurs).</p>
-              
-              <h4>Difficultés & Rebonds</h4>
-              <ul>
-                <li><strong>Difficulté (Ton de l'app) :</strong> Sensibiliser à l'écologie sans être moralisateur. <br/><em>Rebond :</em> Choix d'une charte graphique chaleureuse (beige/brun) et d'un slogan axé sur la progressivité.</li>
-                <li><strong>Difficulté (Pertinence) :</strong> Proposer des recettes variées sans dérouter. <br/><em>Rebond :</em> Création d'un algorithme basé sur une topologie culturelle mondiale (100+ traditions) pour lier les cuisines proches.</li>
-                <li><strong>Difficulté (Ressources) :</strong> Batterie et contrainte hors-ligne. <br/><em>Rebond :</em> Optimisation drastique des requêtes SQL locales via SQLite.</li>
-              </ul>
-              
               <p><strong>Bilan :</strong> Une app performante intégrant un Éco-Score. J'en retiens l'importance d'allier architecture rigoureuse (MVC/Repository) et UX soignée.</p>
               <div className="tags">
                 <span className="tag">Flutter</span>
@@ -197,19 +187,10 @@ const Portfolio = () => {
                 <span className="tag">Algorithmique</span>
               </div>
             </div>
-
             <div className="card">
               <h4>SAÉ S6 : Diagrammes de Voronoï & IA Génératives</h4>
               <p><strong>Contexte :</strong> Générer un diagramme de Voronoï via Python et comparer l'efficacité de 4 IA génératives dans le développement logiciel.</p>
               <p><strong>Mon rôle :</strong> Développeur et "Prompt Engineer" attitré. Chargé d'analyser les risques de souveraineté/légalité des IA.</p>
-
-              <h4>Difficultés & Rebonds</h4>
-              <ul>
-                <li><strong>Difficulté (IA Inefficace) :</strong> L'IA Grok a totalement échoué à générer le diagramme. <br/><em>Rebond :</em> Pivot stratégique immédiat vers DeepSeek.</li>
-                <li><strong>Difficulté (Code instable) :</strong> Arborescence initiale brisée, rendu graphique faux (couleurs confondues). <br/><em>Rebond :</em> Processus itératif de 26 prompts. Fourniture des logs d'erreurs et captures d'écran à l'IA pour la forcer à corriger le tracé SVG/PNG.</li>
-                <li><strong>Difficulté (Contrainte cachée) :</strong> L'IA imposait arbitrairement un minimum de 3 points. <br/><em>Rebond :</em> Identification du bug lors de mes tests et suppression de la contrainte pour un rendu valide dès le 1er point.</li>
-              </ul>
-
               <p><strong>Bilan :</strong> Module obtenu en moins d'une heure. Conclusion : l'IA accélère le développement mais ne remplace jamais l'esprit critique, le débogage et l'analyse de logs d'un ingénieur humain.</p>
               <div className="tags">
                 <span className="tag">Python</span>
@@ -228,17 +209,6 @@ const Portfolio = () => {
             <div className="card">
               <h4>Bot de Trading Algorithmique (Marché de l'Or - XAUUSD)</h4>
               <p>Développement d'un système autonome conçu et codé de A à Z en Python, en collaboration avec un trader professionnel.</p>
-              
-              <h4>Fonctionnalités Techniques</h4>
-              <ul>
-                <li><strong>Collecte & Analyse :</strong> Récupération des données en temps réel via l'API MetaTrader 5. Calcul d'indicateurs (EMA, ATR, RSI) et détection de patterns institutionnels (Order Blocks, Smart Money Concepts).</li>
-                <li><strong>Veille Asynchrone :</strong> Moteur de news multi-sources avec système de scoring basé sur le NLP (Traitement du Langage Naturel) pour analyser le sentiment du marché.</li>
-                <li><strong>Exécution Ultra-Rapide :</strong> Prise de position à faible latence (millisecondes) lors des annonces macroéconomiques majeures (NFP, FOMC, CPI).</li>
-                <li><strong>Gestion des risques :</strong> Implémentation d'un système autonome avec Kill Switch et Trailing Stop.</li>
-              </ul>
-
-              <p><strong>Objectif actuel :</strong> Valider une stratégie rentable sur compte démo pour un passage en production, avec l'ambition de rendre le système scalable vers des flux institutionnels comme Bloomberg ou Reuters.</p>
-              
               <div className="tags">
                 <span className="tag">Python</span>
                 <span className="tag">asyncio & aiohttp</span>
@@ -272,11 +242,6 @@ const Portfolio = () => {
                 </ul>
               </div>
             </div>
-            
-            <div className="card" style={{marginTop: '1.5rem'}}>
-              <h4>Ma valeur ajoutée</h4>
-              <p>Mon atout principal est ma double compétence : <strong>Développement Full Stack + Cybersécurité/Infrastructure</strong>. Cette transversalité me permet d'avoir une vision globale du cycle de vie d'une application, depuis sa conception logicielle jusqu'à son déploiement réseau et sa sécurisation face aux attaques.</p>
-            </div>
 
             <h3>Auto-évaluation des Compétences (BUT Informatique)</h3>
             <table className="eval-table">
@@ -291,21 +256,21 @@ const Portfolio = () => {
               <tbody>
                 <tr>
                   <td><strong>Réaliser</strong></td>
-                  <td>16/20</td>
-                  <td>Autonome de bout en bout. Maîtrise des architectures MVC/Repository (Flutter/SQLite). Capacité à déboguer un terminal et à piloter une IA avec esprit critique (26 prompts sur Voronoï). Modularisation avancée du code (Python).</td>
-                  <td>Besoins occasionnels de phases de refactoring. Je dois viser un code nativement optimisé aux plus hauts standards d'architecture dès le premier jet.</td>
+                  <td>14/20</td>
+                  <td>Autonome de bout en bout. Maîtrise des architectures MVC/Repository et développement Python. Capacité à piloter une IA avec esprit critique.</td>
+                  <td>Besoin de plus de rigueur initiale pour limiter le refactoring de code.</td>
                 </tr>
                 <tr>
                   <td><strong>Optimiser</strong></td>
-                  <td>15/20</td>
-                  <td>Capacité à proposer des algorithmes innovants (topologie culturelle) et à nettoyer le code des contraintes inutiles générées par l'IA. Excellente optimisation des requêtes SQL pour préserver l'énergie des mobiles.</td>
-                  <td>Acquérir des automatismes méthodologiques (utilisation de profilers de code, calculs de complexité théorique) pour optimiser par défaut et non a posteriori.</td>
+                  <td>12/20</td>
+                  <td>Optimisation des requêtes SQL et nettoyage des contraintes inutiles dans le code.</td>
+                  <td>Approfondir les calculs de complexité théorique et l'usage de profilers pour optimiser par défaut.</td>
                 </tr>
                 <tr>
                   <td><strong>Collaborer</strong></td>
-                  <td>16/20</td>
-                  <td>Excellente intégration d'équipe. Capacité à lier la technique aux enjeux design/communication. Gestion de projets complexes sans conflits, avec une écoute active et transparente.</td>
-                  <td>Prendre davantage d'initiatives formelles en tant que Lead Developer ou Scrum Master pour guider et structurer la dynamique de toute une équipe.</td>
+                  <td>13/20</td>
+                  <td>Bon esprit d'équipe, transparence technique, interface entre dév et design.</td>
+                  <td>S'investir davantage dans des rôles de leadership formel (Lead Dev/Scrum Master).</td>
                 </tr>
               </tbody>
             </table>
@@ -315,28 +280,10 @@ const Portfolio = () => {
       case 'avenir':
         return (
           <div className="section-content">
-            <h3>Bilan Académique</h3>
-            <div className="grid-2">
-              <div className="card">
-                <h4>Mes points forts</h4>
-                <p>Mon moteur est la passion. Lorsque j'étudie un domaine lié au développement, à la gestion de projet ou à la sécurité, mon investissement est total, ce qui s'est traduit par d'excellentes notes lors de mes SAÉ. Je retiens ma grande curiosité technique, mon esprit d'équipe et ma capacité d'adaptation rapide aux nouvelles technologies (comme les IAGen).</p>
-              </div>
-              <div className="card">
-                <h4>Mes axes de progression</h4>
-                <p>Ma principale difficulté a été de maintenir une rigueur constante dans les matières théoriques ou périphériques à mes passions. J'ai compris qu'un bon ingénieur doit traiter chaque module avec un professionnalisme égal. C'est un point que j'ai activement corrigé pour cette fin de cursus.</p>
-              </div>
-            </div>
-
-            <h3>Poursuite d'études & Objectifs</h3>
+            <h3>Bilan & Avenir</h3>
             <div className="card">
-              <h4>Objectif à Court Terme (6 mois) : Transition et Consolidation</h4>
-              <p>Sécuriser mon entrée en <strong>École d'Ingénieurs en Informatique</strong>. Je souhaite assimiler parfaitement mes fondamentaux du BUT pour démarrer le cycle ingénieur avec un socle technique et méthodologique irréprochable, et me positionner comme un élément moteur de ma future promotion.</p>
-              
-              <h4>Objectif à Moyen Terme (1-2 ans) : Spécialisation Cybersécurité</h4>
-              <p>Décrocher mon diplôme d'ingénieur tout en orientant stratégiquement tous mes choix (options, projets, stages) vers la sécurité informatique et les réseaux, afin de bâtir un profil hautement employable et pertinent face aux réalités des menaces actuelles.</p>
-              
-              <h4>Objectif à Long Terme (5 ans et +) : Devenir Expert Pentester</h4>
-              <p>Faire carrière dans le hacking éthique (Pentest). Mon épanouissement passera par la résolution quotidienne de défis stimulants (audits, recherche de vulnérabilités, sécurisation de SI critiques) tout en atteignant une forte reconnaissance professionnelle et une stabilité financière à la hauteur de mon expertise.</p>
+              <h4>Objectifs de carrière</h4>
+              <p>Objectif : Intégrer une école d'ingénieurs pour approfondir la cybersécurité. Mon but est de devenir Pentester et d'apporter mon expertise sur la sécurisation des systèmes critiques à l'international.</p>
             </div>
           </div>
         );
@@ -353,29 +300,24 @@ const Portfolio = () => {
         <h2>Développeur Full Stack & Passionné de Cybersécurité</h2>
         <div className="contact-bar">
           <a href="mailto:aginryan951@gmail.com">aginryan951@gmail.com</a>
-          <span>|</span>
-          <span>07.66.18.56.72</span>
-          <span>|</span>
-          <a href="https://www.linkedin.com/in/ryan-agin-069b012a3/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <span>|</span>
-          <a href="https://github.com/KAKRI21" target="_blank" rel="noreferrer">GitHub</a>
+          <span>|</span> <span>07.66.18.56.72</span>
+          <span>|</span> <a href="https://www.linkedin.com/in/ryan-agin-069b012a3/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <span>|</span> <a href="https://github.com/KAKRI21" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </header>
 
       <nav className="nav-tabs">
-        <button className={`tab-button ${activeTab === 'accueil' ? 'active' : ''}`} onClick={() => setActiveTab('accueil')}>À propos & Culture</button>
+        <button className={`tab-button ${activeTab === 'accueil' ? 'active' : ''}`} onClick={() => setActiveTab('accueil')}>À propos</button>
         <button className={`tab-button ${activeTab === 'stage' ? 'active' : ''}`} onClick={() => setActiveTab('stage')}>Stages</button>
-        <button className={`tab-button ${activeTab === 'sae' ? 'active' : ''}`} onClick={() => setActiveTab('sae')}>Projets SAÉ</button>
-        <button className={`tab-button ${activeTab === 'perso' ? 'active' : ''}`} onClick={() => setActiveTab('perso')}>Projets Persos</button>
-        <button className={`tab-button ${activeTab === 'competences' ? 'active' : ''}`} onClick={() => setActiveTab('competences')}>Compétences & Auto-évaluation</button>
-        <button className={`tab-button ${activeTab === 'avenir' ? 'active' : ''}`} onClick={() => setActiveTab('avenir')}>Bilan & Avenir</button>
+        <button className={`tab-button ${activeTab === 'sae' ? 'active' : ''}`} onClick={() => setActiveTab('sae')}>SAÉ</button>
+        <button className={`tab-button ${activeTab === 'perso' ? 'active' : ''}`} onClick={() => setActiveTab('perso')}>Perso</button>
+        <button className={`tab-button ${activeTab === 'competences' ? 'active' : ''}`} onClick={() => setActiveTab('competences')}>Compétences</button>
+        <button className={`tab-button ${activeTab === 'avenir' ? 'active' : ''}`} onClick={() => setActiveTab('avenir')}>Avenir</button>
       </nav>
 
-      <main>
-        {renderTabContent()}
-      </main>
+      <main>{renderTabContent()}</main>
       
-      <footer style={{ textAlign: 'center', marginTop: '4rem', paddingBottom: '2rem', color: 'var(--text-muted)', fontSize: '0.9rem' }}>
+      <footer style={{ textAlign: 'center', marginTop: '4rem', color: '#94a3b8' }}>
         <p>© 2026 Ryan Agin. Portfolio BUT 3 Informatique.</p>
       </footer>
     </div>
