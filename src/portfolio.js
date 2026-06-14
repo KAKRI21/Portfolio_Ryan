@@ -178,44 +178,70 @@ const Portfolio = () => {
             <h3>Projets Universitaires (SAÉ)</h3>
             
             <div className="card">
-              <h4>SAÉ S5 : MIAAM (App Mobile Anti-Gaspillage)</h4>
-              <p><strong>Contexte :</strong> Conception d'une application intelligente proposant des recettes sur mesure pour réduire le gaspillage alimentaire (Slogan : "Réduire le gaspillage, un repas à la fois").</p>
-              <p><strong>Mon rôle :</strong> Co-conception de l'identité visuelle et développement de la logique métier (organisation et profils utilisateurs).</p>
+              <h4>SAÉ S5 : MIAAM - App Mobile Anti-Gaspillage</h4>
               
-              <h4>Difficultés & Rebonds</h4>
-              <ul>
-                <li><strong>Difficulté (Ton de l'app) :</strong> Sensibiliser à l'écologie sans être moralisateur. <br/><em>Rebond :</em> Choix d'une charte graphique chaleureuse (beige/brun) et d'un slogan axé sur la progressivité.</li>
-                <li><strong>Difficulté (Pertinence) :</strong> Proposer des recettes variées sans dérouter. <br/><em>Rebond :</em> Création d'un algorithme basé sur une topologie culturelle mondiale (100+ traditions) pour lier les cuisines proches.</li>
-                <li><strong>Difficulté (Ressources) :</strong> Batterie et contrainte hors-ligne. <br/><em>Rebond :</em> Optimisation drastique des requêtes SQL locales via SQLite.</li>
-              </ul>
-              
-              <p><strong>Bilan :</strong> Une app performante intégrant un Éco-Score. J'en retiens l'importance d'allier architecture rigoureuse (MVC/Repository) et UX soignée.</p>
+              <p>
+                Pour ma cinquième année, j'ai participé à la conception d'une application mobile appelée MIAAM. L'idée générale ? Créer un outil qui aide les gens à réduire leur gaspillage alimentaire au quotidien en leur proposant des recettes intelligentes basées sur leurs ingrédients disponibles et leurs préférences. Le slogan qu'on a choisi, "Réduire le gaspillage, un repas à la fois", résume bien l'approche progressive qu'on a voulue : pas culpabilisant, juste pratique et accessible.
+              </p>
+
+              <p>
+                Ma contribution a porté sur deux axes. D'abord, j'ai travaillé avec l'équipe sur l'identité visuelle de l'app : la charte graphique, le logo, les couleurs. On a beaucoup discuté autour de la question du ton. Comment sensibiliser à l'écologie sans adopter un discours moralisateur qui va faire fuir les utilisateurs ? On a opté pour une palette chaleureuse avec du beige clair (pour la douceur) et du brun (pour l'ancrage au quotidien). Ensuite, j'ai géré la logique métier : les systèmes de profils utilisateurs, la personnalisation, l'organisation des données autour des ingrédients et des allergènes.
+              </p>
+
+              <p>
+                Le vrai défi technique a été de proposer des recettes réellement pertinentes et variées sans dérouter l'utilisateur avec des suggestions trop exotiques ou hors de sa zone de confort culinaire. J'ai développé pour ça un algorithme basé sur une topologie culturelle mondiale. L'idée était de mapper plus de 100 traditions culinaires et de créer des ponts logiques entre elles. Par exemple, si tu aimes la cuisine méditerranéenne, l'algo va progressivement t'introduire à des cuisines proches plutôt que de te proposer soudain un repas thaï. Ça a vraiment amélioré la pertinence des recommandations.
+              </p>
+
+              <p>
+                Un autre enjeu majeur : tout fonctionne en mode hors-ligne sur le téléphone via une base SQLite embarquée. Ça signifie que l'app doit être extrêmement économe en ressources, sans quoi elle va vider la batterie en deux heures. J'ai donc passé du temps à optimiser drastiquement les requêtes SQL et les traitements pour que la navigation reste fluide même sans réseau.
+              </p>
+
+              <p>
+                À la fin, on a livré une application complète et performante qui intègre un Éco-Score pour chaque recette. Ce projet m'a vraiment marqué sur un point : l'importance de ne pas opposer architecture technique rigoureuse et expérience utilisateur. C'est l'équilibre entre les deux qui crée un produit vraiment utile.
+              </p>
+
               <div className="tags">
                 <span className="tag">Flutter</span>
                 <span className="tag">SQLite</span>
                 <span className="tag">MVC</span>
                 <span className="tag">Algorithmique</span>
+                <span className="tag">UX Design</span>
               </div>
             </div>
 
             <div className="card">
               <h4>SAÉ S6 : Diagrammes de Voronoï & IA Génératives</h4>
-              <p><strong>Contexte :</strong> Générer un diagramme de Voronoï via Python et comparer l'efficacité de 4 IA génératives dans le développement logiciel.</p>
-              <p><strong>Mon rôle :</strong> Développeur et "Prompt Engineer" attitré. Chargé d'analyser les risques de souveraineté/légalité des IA.</p>
+              
+              <p>
+                En sixième année, j'ai eu un projet un peu différent : il fallait créer une application capable de générer et visualiser des diagrammes de Voronoï à partir d'un fichier de coordonnées. Mais le vrai sujet de fond n'était pas juste d'implémenter l'algo : c'était d'évaluer comment les IA génératives pouvaient nous aider dans le développement, et quels étaient les risques associés.
+              </p>
 
-              <h4>Difficultés & Rebonds</h4>
-              <ul>
-                <li><strong>Difficulté (IA Inefficace) :</strong> L'IA Grok a totalement échoué à générer le diagramme. <br/><em>Rebond :</em> Pivot stratégique immédiat vers DeepSeek.</li>
-                <li><strong>Difficulté (Code instable) :</strong> Arborescence initiale brisée, rendu graphique faux (couleurs confondues). <br/><em>Rebond :</em> Processus itératif de 26 prompts. Fourniture des logs d'erreurs et captures d'écran à l'IA pour la forcer à corriger le tracé SVG/PNG.</li>
-                <li><strong>Difficulté (Contrainte cachée) :</strong> L'IA imposait arbitrairement un minimum de 3 points. <br/><em>Rebond :</em> Identification du bug lors de mes tests et suppression de la contrainte pour un rendu valide dès le 1er point.</li>
-              </ul>
+              <p>
+                Le projet avait trois phases. Phase 1, on développait l'application sans IA, juste nous à la main. Phase 2, on la redéveloppait en utilisant 4 IA génératives différentes pour voir lesquelles étaient les plus efficaces. Phase 3, on analysait les risques : souveraineté numérique, légalité, qualité du code généré, impact environnemental. Pour ma part, j'étais en charge de la Phase 2 comme "Prompt Engineer" attitré, et je devais aussi analyser une dimension des risques.
+              </p>
 
-              <p><strong>Bilan :</strong> Module obtenu en moins d'une heure. Conclusion : l'IA accélère le développement mais ne remplace jamais l'esprit critique, le débogage et l'analyse de logs d'un ingénieur humain.</p>
+              <p>
+                Dès le départ, j'ai choisi de tester DeepSeek, l'IA chinoise, pour avoir une alternative aux solutions américaines dominantes (Claude, ChatGPT, Grok). Ça m'intéressait de confronter les performances, mais aussi de réfléchir aux enjeux de souveraineté technologique. Avec DeepSeek, j'ai lancé le développement, mais rapidement, j'ai rencontré des blocages. L'arborescence du code qu'elle générée était cassée, les imports ne marchaient pas. J'ai eu beau expliquer le problème, elle ne comprenait pas bien. Ça m'a appris une première leçon : l'IA génère vite, mais c'est du code brut qui a besoin de beaucoup de polissage.
+              </p>
+
+              <p>
+                Le défi vraiment intéressant a été le rendu graphique. L'app était censée afficher les diagrammes en SVG et en PNG, mais au départ, les couleurs étaient confondues, les arêtes du diagramme n'étaient pas tracées correctement. Là, j'ai dû devenir vraiment "prompt engineer" : j'ai fait 26 itérations avec l'IA. À chaque fois, je lui fournissais les logs d'erreurs du terminal et des captures d'écran des défauts visuels pour la forcer à corriger précisément le tracé. C'était long, mais ça a marché. La clé était de guider l'IA avec des informations très concrètes plutôt que des descriptions vagues.
+              </p>
+
+              <p>
+                En testant l'application, j'ai aussi découvert qu'elle avait une contrainte arbitraire : elle refusait de fonctionner avec moins de 3 points. Pourquoi 3 ? Aucune bonne raison. C'était juste une limite que l'IA avait introduite par défaut sans qu'on le demande. Je l'ai signalé et j'ai demandé la suppression de cette contrainte pour que l'app soit vraiment flexible.
+              </p>
+
+              <p>
+                En moins d'une heure au total, j'avais un module fonctionnel. Ce projet m'a appris quelque chose de crucial : l'IA générative offre un vrai gain de rapidité et de productivité, c'est indéniable. Mais elle ne remplace absolument pas l'esprit critique d'un développeur. Sans capacités solides en débogage, en lecture de logs, en tests unitaires et en réflexion stratégique, le code généré reste inutilisable. La vraie compétence, c'est de savoir exploiter l'IA tout en gardant un regard critique.
+              </p>
+
               <div className="tags">
                 <span className="tag">Python</span>
                 <span className="tag">DeepSeek</span>
                 <span className="tag">Prompt Engineering</span>
                 <span className="tag">SVG/PNG Rendering</span>
+                <span className="tag">Analyse critique</span>
               </div>
             </div>
           </div>
