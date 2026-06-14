@@ -11,10 +11,16 @@ const Portfolio = () => {
           <div className="section-content">
             <h3>Présentation Personnelle</h3>
             <div className="card">
-              <h4>Mon histoire avec l'informatique</h4>
-              <p>
-                J'ai découvert ma passion pour l'informatique vers l'âge de 13 ans avec mon premier ordinateur. Au départ, j'étais simplement curieux de comprendre comment fonctionnaient les jeux, les logiciels et Internet. Très vite, j'ai voulu regarder "derrière l'écran" : les systèmes, les réseaux, la sécurité. Cette curiosité m'a poussé à apprendre par moi-même, puis à intégrer un BUT Informatique. Aujourd'hui, ma vocation est claire : la cybersécurité, un domaine qui combine analyse, logique, investigation et résolution de problèmes concrets.
-              </p>
+              <div className="presentation-header">
+                {/* La photo s'affiche ici */}
+                <img src="/photo-ryan.jpg" alt="Ryan Agin" className="profile-photo" />
+                <div>
+                  <h4 style={{ marginTop: 0 }}>Mon histoire avec l'informatique</h4>
+                  <p>
+                    J'ai découvert ma passion pour l'informatique vers l'âge de 13 ans avec mon premier ordinateur. Au départ, j'étais simplement curieux de comprendre comment fonctionnaient les jeux, les logiciels et Internet. Très vite, j'ai voulu regarder "derrière l'écran" : les systèmes, les réseaux, la sécurité. Cette curiosité m'a poussé à apprendre par moi-même, puis à intégrer un BUT Informatique. Aujourd'hui, ma vocation est claire : la cybersécurité, un domaine qui combine analyse, logique, investigation et résolution de problèmes concrets.
+                  </p>
+                </div>
+              </div>
               
               <h4>Ce qui me définit</h4>
               <p>
