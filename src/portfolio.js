@@ -32,7 +32,7 @@ const Portfolio = () => {
               
               <h4>Une anecdote marquante</h4>
               <p>
-                Mon stage chez CM-MP en deuxième année, c'est vraiment là que tout a cliqué pour moi. Pour la première fois, j'ai eu affaire à de vraies infrastructures informatiques : gérer des serveurs en production, configurer des réseaux, intervenir sur des incidents de sécurité réels. Pas du labo, du vrai travail qui a du poids. Ça m'a donné confiance en mes compétences techniques et a confirmé que je voulais faire de la cybersécurité — pas juste en théorie, mais en vrai.
+                Mon stage chez CM-MP en deuxième année, c'est vraiment là que tout a cliqué pour moi. Pour la première fois, j'ai eu affaire à de vraies infrastructures informatiques : gérer des serveurs en production, configurer des réseaux, intervenir sur des incidents de sécurité réels. Pas du labo, du vrai travail qui a du poids. Ça m'a donné confiance en mes compétences techniques et a confirmé que je voulais faire de la cybersécurité, pas juste en théorie, mais en vrai.
               </p>
             </div>
 
@@ -68,7 +68,7 @@ const Portfolio = () => {
             {/* ==================== STAGE 3EME ANNEE ==================== */}
             <div className="card">
               <span className="badge-year">Stage 3ème Année</span>
-              <h4>Auto-école MILAR (Sarcelles) — Développeur Python / Automatisation</h4>
+              <h4>Auto-école MILAR (Sarcelles) - Développeur Python / Automatisation</h4>
               <p><em>Du 18 mai au 18 septembre 2026</em></p>
               <p><strong>Mission :</strong> Développement d'un bot haute performance de réservation automatique de places d'examen de conduite sur la plateforme gouvernementale (pro.permisdeconduire.gouv.fr).</p>
               
@@ -100,7 +100,7 @@ const Portfolio = () => {
             {/* ==================== STAGE 2EME ANNEE ==================== */}
             <div className="card">
               <span className="badge-year">Stage 2ème Année</span>
-              <h4>CM-MP (Nanterre) — Administrateur Système et Réseau</h4>
+              <h4>CM-MP (Nanterre) - Administrateur Système et Réseau</h4>
               <p><em>Du 27 janvier au 21 février 2025</em></p>
               <h5 className="sub-tagline">Mon premier vrai contact avec la cybersécurité en entreprise</h5>
               
@@ -108,17 +108,17 @@ const Portfolio = () => {
                 Pour ma deuxième année de BUT, j'ai eu l'opportunité de stager chez CM-MP à Nanterre. Clairement, c'est un stage qui m'a ouvert les yeux sur ce que représente vraiment la cybersécurité en tant que métier.
               </p>
               <p>
-                Ce qui m'a le plus marqué, c'est d'avoir enfin vu la sécurité informatique de l'intérieur : pas théorique, mais concret. Je me suis rendu compte que la sécu, ce n'est pas qu'une question de firewall ou d'antivirus — c'est une mentalité, une approche où chaque détail compte quand tu dois protéger les données et les systèmes de vrais clients.
+                Ce qui m'a le plus marqué, c'est d'avoir enfin vu la sécurité informatique de l'intérieur : pas théorique, mais concret. Je me suis rendu compte que la sécu, ce n'est pas qu'une question de firewall ou d'antivirus, c'est une mentalité, une approche où chaque détail compte quand tu dois protéger les données et les systèmes de vrais clients.
               </p>
               
               <h4>Ce que j'ai vraiment fait</h4>
               <p>
-                J'ai pu mettre les mains dans les baies de serveurs : configuration de VMware ESXi, gestion des réseaux, mise en place de VPN, installation de systèmes de reconnaissance faciale, et réaction à des incidents de sécurité en direct. Ce qui m'a marqué aussi, c'est le contact avec les clients — des PME et TPE — où j'ai compris l'importance d'être à l'écoute, de savoir expliquer les choses simplement et d'être rigoureux dans son travail.
+                J'ai pu mettre les mains dans les baies de serveurs : configuration de VMware ESXi, gestion des réseaux, mise en place de VPN, installation de systèmes de reconnaissance faciale, et réaction à des incidents de sécurité en direct. Ce qui m'a marqué aussi, c'est le contact avec les clients (des PME et TPE) où j'ai compris l'importance d'être à l'écoute, de savoir expliquer les choses simplement et d'être rigoureux dans son travail.
               </p>
               
               <h4>L'ambiance, l'équipe</h4>
               <p>
-                L'équipe chez CM-MP était vraiment soudée. Tout le monde avait le réflexe de partager ses connaissances et de s'entraider. Ça m'a conforté dans mon envie de faire carrière en cybersécurité. Et franchement, ce stage m'a montré que ce secteur est en perpétuelle évolution : chaque jour c'était quelque chose de nouveau — une config réseau à sécuriser, une tentative d'intrusion à analyser, un serveur à déployer en production.
+                L'équipe chez CM-MP était vraiment soudée. Tout le monde avait le réflexe de partager ses connaissances et de s'entraider. Ça m'a conforté dans mon envie de faire carrière en cybersécurité. Et franchement, ce stage m'a montré que ce secteur est en perpétuelle évolution : chaque jour c'était quelque chose de nouveau, une config réseau à sécuriser, une tentative d'intrusion à analyser, un serveur à déployer en production.
               </p>
 
               <h4>Bilan honnête</h4>
@@ -135,7 +135,7 @@ const Portfolio = () => {
               </div>
 
               {/* Galerie Photos avec tes fichiers */}
-              <h4>Galerie Médias — Équipements et Infrastructure</h4>
+              <h4>Galerie Médias - Équipements et Infrastructure</h4>
               <div className="image-gallery">
                 <div className="gallery-item">
                   <img src={`${process.env.PUBLIC_URL}/IMG_2967.jpg`} alt="Serveur rack ouvert" />
@@ -155,7 +155,7 @@ const Portfolio = () => {
               <div className="supervision-box">
                 <h5>Encadrement :</h5>
                 <ul>
-                  <li><strong>Tuteur en entreprise :</strong> M. Stéphane Eveillard (aco@cm-mp.fr — 01 80 70 60 00)</li>
+                  <li><strong>Tuteur en entreprise :</strong> M. Stéphane Eveillard (aco@cm-mp.fr - 01 80 70 60 00)</li>
                   <li><strong>Maître de stage :</strong> Mme. Haifa Zargayouna (haifa.zargayouna@lipn.univ-paris13.fr)</li>
                 </ul>
               </div>
@@ -166,7 +166,7 @@ const Portfolio = () => {
               <h4>Témoignage Professionnel</h4>
               <blockquote className="testimonial">
                 "Durant ses 4 mois de stage au sein de notre agence, Ryan fait preuve d'un professionnalisme exemplaire. C'est un jeune homme sérieux, ponctuel et doté d'un excellent sens relationnel. Bien qu'autonome sur la conception technique, il a su parfaitement s'intégrer à l'équipe et communiquer clairement. Les retours sur son travail sont très positifs, et son attitude a été irréprochable. Nous recommandons vivement son profil."
-                <span className="testimonial-author">— Hélène Aydin, Secrétaire & Référente RH (Europermis, Sarcelles)</span>
+                <span className="testimonial-author">- Hélène Aydin, Secrétaire & Référente RH (Europermis, Sarcelles)</span>
               </blockquote>
             </div>
           </div>
