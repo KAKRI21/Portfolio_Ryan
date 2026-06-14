@@ -12,8 +12,12 @@ const Portfolio = () => {
             <h3>Présentation Personnelle</h3>
             <div className="card">
               <div className="presentation-header">
-                {/* La photo s'affiche ici */}
-                <img src="/photo-ryan.jpg" alt="Ryan Agin" className="profile-photo" />
+                {/* Correction dynamique du chemin pour GitHub Pages */}
+                <img 
+                  src={`${process.env.PUBLIC_URL}/photo-ryan.jpg`} 
+                  alt="Ryan Agin" 
+                  className="profile-photo" 
+                />
                 <div>
                   <h4 style={{ marginTop: 0 }}>Mon histoire avec l'informatique</h4>
                   <p>
