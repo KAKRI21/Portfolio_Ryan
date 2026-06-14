@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#05070c" />
+    <meta name="description" content="Portfolio Universitaire de Ryan Agin - BUT Informatique Spécialisation Cybersécurité" />
+    <title>R.AGIN | Portfolio</title>
+
+    <!-- Importation des Google Fonts nécessaires au thème Cyber -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+      /* Reset de base */
+      body {
+        margin: 0;
+        background-color: #05070c;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      /* Animation du curseur de la machine à écrire */
+      @keyframes blink {
+        from, to { border-color: transparent }
+        50% { border-color: #00cfff; }
+      }
+
+      /* Gestion de l'affichage Responsive de la barre de navigation */
+      @media (max-width: 768px) {
+        .nav-desktop {
+          display: none !important;
+        }
+      }
+      @media (min-width: 769px) {
+        .nav-mobile-btn {
+          display: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>Vous devez activer JavaScript pour exécuter cette application.</noscript>
+    
+    <!-- Point d'ancrage injecté par React -->
+    <div id="root"></div>
+  </body>
+</html>
