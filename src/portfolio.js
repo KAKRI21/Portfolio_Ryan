@@ -181,7 +181,7 @@ const Portfolio = () => {
               <h4>SAÉ S5 : MIAAM - App Mobile Anti-Gaspillage</h4>
               
               <p>
-                Pour ma cinquième année, j'ai participé à la conception d'une application mobile appelée MIAAM. L'idée générale ? Créer un outil qui aide les gens à réduire leur gaspillage alimentaire au quotidien en leur proposant des recettes intelligentes basées sur leurs ingrédients disponibles et leurs préférences. Le slogan qu'on a choisi, "Réduire le gaspillage, un repas à la fois", résume bien l'approche progressive qu'on a voulue : pas culpabilisant, juste pratique et accessible.
+                En début de troisième année, j'ai participé à la conception d'une application mobile appelée MIAAM. L'idée générale ? Créer un outil qui aide les gens à réduire leur gaspillage alimentaire au quotidien en leur proposant des recettes intelligentes basées sur leurs ingrédients disponibles et leurs préférences. Le slogan qu'on a choisi, "Réduire le gaspillage, un repas à la fois", résume bien l'approche progressive qu'on a voulue : pas culpabilisant, juste pratique et accessible.
               </p>
 
               <p>
@@ -213,7 +213,7 @@ const Portfolio = () => {
               <h4>SAÉ S6 : Diagrammes de Voronoï & IA Génératives</h4>
               
               <p>
-                En sixième année, j'ai eu un projet un peu différent : il fallait créer une application capable de générer et visualiser des diagrammes de Voronoï à partir d'un fichier de coordonnées. Mais le vrai sujet de fond n'était pas juste d'implémenter l'algo : c'était d'évaluer comment les IA génératives pouvaient nous aider dans le développement, et quels étaient les risques associés.
+                En fin de troisième année, j'ai eu un projet un peu différent : il fallait créer une application capable de générer et visualiser des diagrammes de Voronoï à partir d'un fichier de coordonnées. Mais le vrai sujet de fond n'était pas juste d'implémenter l'algo : c'était d'évaluer comment les IA génératives pouvaient nous aider dans le développement, et quels étaient les risques associés.
               </p>
 
               <p>
