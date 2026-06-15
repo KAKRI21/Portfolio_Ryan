@@ -7,9 +7,6 @@ const Portfolio = () => {
   const renderTabContent = () => {
     switch (activeTab) {
 
-      // ============================================================
-      // ACCUEIL
-      // ============================================================
       case 'accueil':
         return (
           <div className="section-content">
@@ -84,15 +81,11 @@ const Portfolio = () => {
           </div>
         );
 
-      // ============================================================
-      // STAGES
-      // ============================================================
       case 'stage':
         return (
           <div className="section-content">
             <h3>Mes Expériences en Stage</h3>
 
-            {/* STAGE 3EME ANNEE */}
             <div className="card">
               <span className="badge-year">Stage 3ème Année</span>
               <h4>Auto-école MILAR / Europermis (Sarcelles) - Développeur Python / Automatisation</h4>
@@ -138,7 +131,6 @@ const Portfolio = () => {
               </div>
             </div>
 
-            {/* STAGE 2EME ANNEE */}
             <div className="card">
               <span className="badge-year">Stage 2ème Année</span>
               <h4>CM-MP (Nanterre) - Administrateur Système et Réseau</h4>
@@ -200,7 +192,6 @@ const Portfolio = () => {
               </div>
             </div>
 
-            {/* TEMOIGNAGE */}
             <div className="card">
               <h4>Témoignage Professionnel</h4>
               <blockquote className="testimonial">
@@ -211,9 +202,6 @@ const Portfolio = () => {
           </div>
         );
 
-      // ============================================================
-      // PROJETS SAE
-      // ============================================================
       case 'sae':
         return (
           <div className="section-content">
@@ -303,9 +291,6 @@ const Portfolio = () => {
           </div>
         );
 
-      // ============================================================
-      // PROJETS PERSO
-      // ============================================================
       case 'perso':
         return (
           <div className="section-content">
@@ -352,8 +337,88 @@ const Portfolio = () => {
         );
 
       // ============================================================
-      // COMPETENCES
+      // MES FIERTÉS (NOUVELLE SECTION)
       // ============================================================
+      case 'fiertes':
+        return (
+          <div className="section-content">
+            <h3>Mes Fiertés</h3>
+            <p style={{ color: 'var(--text-muted)', marginBottom: '2rem' }}>Des projets que j'ai construits de zéro, qui tournent pour de vrai, et dont je suis sincèrement fier.</p>
+
+            <div className="card">
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.5rem' }}>
+                <span style={{ fontSize: '1.8rem' }}>⚡</span>
+                <h4 style={{ margin: 0 }}>Un bot qui réserve des places d'examen en moins de 200ms</h4>
+              </div>
+              <p style={{ color: 'var(--text-muted)', marginTop: '0.2rem', marginBottom: '1rem' }}><em>Stage MILAR / Europermis — Python, Playwright, CDP</em></p>
+              <p>
+                C'est probablement le projet le plus concret que j'aie jamais livré. L'auto-école perdait des créneaux d'examen de conduite chaque jour face à des concurrents plus rapides. Ma mission : coder un bot qui se connecte à la plateforme gouvernementale, surveille les créneaux disponibles dès leur publication à 15h, et les réserve automatiquement — avant que quiconque ait eu le temps de cliquer.
+              </p>
+              <p>
+                Sauf que la plateforme est bien protégée : Cloudflare Turnstile, protection Akamai, SSO Keycloak avec des injections JS qui désactivent les boutons... Autant d'obstacles que j'ai contournés un par un, en analysant les échanges réseau dans les fichiers HAR, en utilisant le protocole CDP pour piloter un vrai navigateur Chrome, en simulant de vraies frappes clavier pour passer les formulaires.
+              </p>
+              <p>
+                Le résultat ? Un bot qui tourne en production, qui réserve des places pour de vrais élèves, et qui a remplacé des heures de surveillance manuelle quotidienne. La première fois que j'ai vu une réservation s'effectuer toute seule à 15h01, pendant que les concurrents rafraîchissaient encore leur page manuellement, j'ai compris que le travail en valait vraiment la peine.
+              </p>
+              <div className="tags" style={{ marginTop: '1rem' }}>
+                <span className="tag">Python</span>
+                <span className="tag">Playwright & CDP</span>
+                <span className="tag">asyncio</span>
+                <span className="tag">Analyse HAR</span>
+                <span className="tag">En production ✓</span>
+              </div>
+            </div>
+
+            <div className="card">
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.5rem' }}>
+                <span style={{ fontSize: '1.8rem' }}>📈</span>
+                <h4 style={{ margin: 0 }}>Un bot de trading qui lit le marché de l'or en temps réel</h4>
+              </div>
+              <p style={{ color: 'var(--text-muted)', marginTop: '0.2rem', marginBottom: '1rem' }}><em>Projet personnel — Python, MetaTrader5 API, NLP</em></p>
+              <p>
+                Le trading algorithmique, c'est un sujet qui m'a toujours intrigué. Pas pour l'argent en premier lieu, mais pour le défi technique : comment coder un programme capable de lire des données financières en temps réel, d'analyser des patterns complexes, et de prendre des décisions d'achat ou de vente en quelques millisecondes ?
+              </p>
+              <p>
+                J'ai développé ce bot en collaboration avec un trader professionnel, ce qui m'a forcé à apprendre un vocabulaire et une logique totalement nouveaux : EMA, RSI, Order Blocks, Fair Value Gaps. Le bot se connecte via l'API MetaTrader 5, récupère les prix de l'or à la milliseconde, et analyse en parallèle les actualités économiques via du NLP pour détecter si une annonce (NFP, FOMC, CPI) va faire monter ou descendre le cours.
+              </p>
+              <p>
+                Ce qui m'a le plus appris ici, c'est la gestion du risque. Un bot qui trade sans protection peut tout perdre en quelques minutes si le marché part dans le mauvais sens. J'ai donc implémenté un Kill Switch automatique et un Trailing Stop pour sécuriser les gains. Le bot tourne actuellement sur un compte démo pour valider la stratégie sur plusieurs mois avant de passer en conditions réelles.
+              </p>
+              <div className="tags" style={{ marginTop: '1rem' }}>
+                <span className="tag">Python</span>
+                <span className="tag">MetaTrader5 API</span>
+                <span className="tag">NLP</span>
+                <span className="tag">Pandas & Numpy</span>
+                <span className="tag">asyncio</span>
+              </div>
+            </div>
+
+            <div className="card">
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.5rem' }}>
+                <span style={{ fontSize: '1.8rem' }}>🥗</span>
+                <h4 style={{ margin: 0 }}>MIAAM — une app mobile qui pense à ta place en cuisine</h4>
+              </div>
+              <p style={{ color: 'var(--text-muted)', marginTop: '0.2rem', marginBottom: '1rem' }}><em>SAÉ S5, IUT Villetaneuse — Flutter, SQLite, MVC</em></p>
+              <p>
+                MIAAM, c'est une app qu'on a conçue en équipe pour aider les gens à ne plus gaspiller leurs ingrédients. L'idée de départ est simple : tu rentres ce que t'as dans le frigo, l'app te propose des recettes adaptées à tes goûts et à tes allergies. Mais derrière cette simplicité, il y avait pas mal de défis techniques.
+              </p>
+              <p>
+                Mon travail a porté sur l'algorithme de recommandation. Le problème : comment proposer des recettes variées et pertinentes sans déstabiliser l'utilisateur avec des suggestions trop exotiques ? J'ai développé une topologie culturelle mondiale qui mappe plus de 100 cuisines et crée des ponts logiques entre elles. Si tu aimes la cuisine méditerranéenne, l'algo t'amène progressivement vers des cuisines proches, pas vers un plat thaï sorti de nulle part.
+              </p>
+              <p>
+                L'autre contrainte forte : l'app fonctionne entièrement hors-ligne via SQLite. Pas de connexion, pas de latence, mais aussi pas le droit de se permettre des requêtes lourdes qui videraient la batterie. J'ai donc bossé sur l'optimisation des requêtes SQL pour que ça reste fluide sur n'importe quel téléphone. À la fin, on a livré une app complète avec un Éco-Score par recette. Propre, fonctionnelle, et utile.
+              </p>
+              <div className="tags" style={{ marginTop: '1rem' }}>
+                <span className="tag">Flutter</span>
+                <span className="tag">SQLite</span>
+                <span className="tag">MVC</span>
+                <span className="tag">Algorithmique</span>
+                <span className="tag">UX Design</span>
+              </div>
+            </div>
+          </div>
+        );
+
       case 'competences':
         return (
           <div className="section-content">
@@ -417,9 +482,6 @@ const Portfolio = () => {
           </div>
         );
 
-      // ============================================================
-      // MON PARCOURS
-      // ============================================================
       case 'parcours':
         return (
           <div className="section-content">
@@ -479,9 +541,6 @@ const Portfolio = () => {
           </div>
         );
 
-      // ============================================================
-      // BILAN & AVENIR
-      // ============================================================
       case 'avenir':
         return (
           <div className="section-content">
@@ -493,7 +552,7 @@ const Portfolio = () => {
               </div>
               <div className="card">
                 <h4>Mes axes de progression</h4>
-                <p>Ma principale difficulté a été de maintenir une rigueur constante dans les matières théoriques ou périphériques à mes passions. J'ai compris qu'un bon ingénieur doit traiter chaque module avec un professionnalisme égal. C'est un point que j'ai activement corrigé pour cette fin de cursus.</p>
+                <p>Ma principale difficulté a été de rester aussi investi dans les matières qui ne me passionnaient pas au premier abord — les cours plus théoriques, moins tournés vers la pratique. J'ai compris qu'un bon ingénieur ne peut pas se permettre de choisir ce qu'il traite sérieusement. C'est un réflexe que j'ai vraiment travaillé sur cette fin de cursus, et ça se voit dans mes résultats.</p>
               </div>
             </div>
 
@@ -550,6 +609,7 @@ const Portfolio = () => {
         <button className={`tab-button ${activeTab === 'stage' ? 'active' : ''}`} onClick={() => setActiveTab('stage')}>Stages</button>
         <button className={`tab-button ${activeTab === 'sae' ? 'active' : ''}`} onClick={() => setActiveTab('sae')}>Projets SAÉ</button>
         <button className={`tab-button ${activeTab === 'perso' ? 'active' : ''}`} onClick={() => setActiveTab('perso')}>Projets Persos</button>
+        <button className={`tab-button ${activeTab === 'fiertes' ? 'active' : ''}`} onClick={() => setActiveTab('fiertes')}>Mes Fiertés</button>
         <button className={`tab-button ${activeTab === 'competences' ? 'active' : ''}`} onClick={() => setActiveTab('competences')}>Compétences & Auto-évaluation</button>
         <button className={`tab-button ${activeTab === 'parcours' ? 'active' : ''}`} onClick={() => setActiveTab('parcours')}>Mon Parcours</button>
         <button className={`tab-button ${activeTab === 'avenir' ? 'active' : ''}`} onClick={() => setActiveTab('avenir')}>Bilan & Avenir</button>
