@@ -317,21 +317,21 @@ const Portfolio = () => {
               <tbody>
                 <tr>
                   <td><strong>Réaliser</strong></td>
-                  <td>16/20</td>
-                  <td>Autonome de bout en bout. Maîtrise des architectures MVC/Repository (Flutter/SQLite). Capacité à déboguer un terminal et à piloter une IA avec esprit critique (26 prompts sur Voronoï). Modularisation avancée du code (Python).</td>
-                  <td>Besoins occasionnels de phases de refactoring. Je dois viser un code nativement optimisé aux plus hauts standards d'architecture dès le premier jet.</td>
+                  <td>13/20</td>
+                  <td>Je sais développer une application de bout en bout et m'adapter aux contraintes techniques au fur et à mesure. Sur MIAAM et Voronoï, j'ai réussi à livrer des projets fonctionnels en utilisant des architectures comme MVC et en structurant mon code de façon lisible.</td>
+                  <td>Je manque encore de réflexe sur certains aspects de la conception en amont. Il m'arrive de devoir retravailler mon code après coup parce que je n'avais pas anticipé certaines contraintes dès le départ.</td>
                 </tr>
                 <tr>
                   <td><strong>Optimiser</strong></td>
-                  <td>15/20</td>
-                  <td>Capacité à proposer des algorithmes innovants (topologie culturelle) et à nettoyer le code des contraintes inutiles générées par l'IA. Excellente optimisation des requêtes SQL pour préserver l'énergie des mobiles.</td>
-                  <td>Acquérir des automatismes méthodologiques (utilisation de profilers de code, calculs de complexité théorique) pour optimiser par défaut et non a posteriori.</td>
+                  <td>12/20</td>
+                  <td>J'ai su optimiser les requêtes SQL sur MIAAM pour que l'app tourne correctement en hors-ligne sans vider la batterie. Sur Voronoï, j'ai aussi identifié et supprimé une contrainte inutile que l'IA avait introduite dans le code.</td>
+                  <td>L'optimisation reste encore souvent une étape que je fais après coup, pas dès le départ. Je n'ai pas encore les automatismes pour évaluer la complexité d'un algorithme avant de le coder.</td>
                 </tr>
                 <tr>
                   <td><strong>Collaborer</strong></td>
-                  <td>16/20</td>
-                  <td>Excellente intégration d'équipe. Capacité à lier la technique aux enjeux design/communication. Gestion de projets complexes sans conflits, avec une écoute active et transparente.</td>
-                  <td>Prendre davantage d'initiatives formelles en tant que Lead Developer ou Scrum Master pour guider et structurer la dynamique de toute une équipe.</td>
+                  <td>14/20</td>
+                  <td>Je m'intègre bien dans une équipe et je communique facilement sur l'avancement de mon travail. Sur les projets en groupe, j'ai su m'adapter aux autres et contribuer autant sur la partie technique que sur des aspects comme le design ou la communication.</td>
+                  <td>Je n'ai pas encore eu l'occasion de gérer une équipe ou de prendre un rôle de référent technique. C'est quelque chose que j'aimerais expérimenter pour progresser sur cet aspect.</td>
                 </tr>
               </tbody>
             </table>
