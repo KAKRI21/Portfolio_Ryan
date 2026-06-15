@@ -244,6 +244,17 @@ const Portfolio = () => {
                 À la fin, on a livré une application complète et performante qui intègre un Éco-Score pour chaque recette. Ce projet m'a vraiment marqué sur un point : l'importance de ne pas opposer architecture technique rigoureuse et expérience utilisateur. C'est l'équilibre entre les deux qui crée un produit vraiment utile.
               </p>
 
+              <div className="image-gallery" style={{ gridTemplateColumns: '1fr', marginTop: '1.5rem' }}>
+                <div className="gallery-item">
+                  <img
+                    src={`${process.env.PUBLIC_URL}/miaam.jpg`}
+                    alt="Page d'accueil de l'application MIAAM"
+                    style={{ height: '500px', objectFit: 'contain', background: '#f5f5f5' }}
+                  />
+                  <span className="image-caption">Page d'accueil de l'app MIAAM - Modes Découverte et Recommandation. L'interface affiche la recette du jour et les top recettes personnalisées selon le profil utilisateur.</span>
+                </div>
+              </div>
+
               <div className="tags">
                 <span className="tag">Flutter</span>
                 <span className="tag">SQLite</span>
