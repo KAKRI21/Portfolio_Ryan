@@ -57,6 +57,23 @@ const Portfolio = () => {
                 <li><strong>Ambition :</strong> Totalement mobile, j'envisage ma carrière à l'international (stage, VIE ou multinationale) pour exercer mon métier dans un contexte multiculturel.</li>
               </ul>
             </div>
+
+            <div className="card">
+              <h4>Visite du Musée des Arts et Métiers</h4>
+              <p>
+                Dans le cadre de ma formation, j'ai visité le Musée des Arts et Métiers à Paris. Ce qui m'a particulièrement frappé, c'est de voir comment l'innovation technique a toujours reposé sur les mêmes fondamentaux : observer la nature, comprendre ses mécanismes, et s'en inspirer pour créer. L'Avion 3 de Clément Ader en est l'exemple parfait : une machine conçue en s'inspirant directement de la morphologie de la chauve-souris. Un ingénieur du XIXe siècle qui "reverse engineering" la nature, c'est finalement pas si éloigné de ce qu'on fait nous, quand on analyse un système pour en comprendre le fonctionnement.
+              </p>
+              <div className="image-gallery" style={{ gridTemplateColumns: '1fr 1fr' }}>
+                <div className="gallery-item">
+                  <img src={`${process.env.PUBLIC_URL}/muse.jpg`} alt="L'Avion 3 de Clément Ader suspendu dans le hall du musée des Arts et Métiers" style={{ height: '300px', objectFit: 'cover' }} />
+                  <span className="image-caption">L'Avion 3 de Clément Ader (1893-1897) suspendu dans le grand hall du Musée des Arts et Métiers, Paris. Une machine inspirée de la chauve-souris, pionnière de l'aviation.</span>
+                </div>
+                <div className="gallery-item">
+                  <img src={`${process.env.PUBLIC_URL}/des.jpg`} alt="Panneau explicatif sur l'Avion 3 et la chauve-souris" style={{ height: '300px', objectFit: 'cover' }} />
+                  <span className="image-caption">Clément Ader s'est inspiré de la morphologie de la chauve-souris pour concevoir son Avion 3. Les essais ont eu lieu les 12 et 14 octobre 1897 à Satory, avant que l'avion ne soit donné au Conservatoire des Arts et Métiers en 1903.</span>
+                </div>
+              </div>
+            </div>
           </div>
         );
 
@@ -277,6 +294,13 @@ const Portfolio = () => {
               <p>
                 En ce moment, le bot tourne sur un compte démo (un compte fictif qui simule les vraies conditions du marché, sans argent réel). L'objectif est de valider que la stratégie est rentable sur plusieurs mois avant de passer en production avec de l'argent réel. À terme, j'aimerais rendre le système compatible avec des flux de données institutionnels comme Bloomberg ou Reuters pour avoir accès à des informations encore plus rapides et précises.
               </p>
+
+              <div className="image-gallery" style={{ gridTemplateColumns: '1fr', marginTop: '1.5rem' }}>
+                <div className="gallery-item">
+                  <img src={`${process.env.PUBLIC_URL}/trading.png`} alt="Bot de trading en cours d'exécution sur MetaTrader 5" style={{ height: '380px', objectFit: 'cover' }} />
+                  <span className="image-caption">Le bot en production sur MetaTrader 5 - On voit les graphiques XAUUSD (or) en temps réel à gauche, et les logs d'exécution du bot dans le terminal PowerShell à droite. Chaque ligne correspond à un cycle d'analyse : le bot récupère les données, calcule les indicateurs, analyse deux stratégies (Pullback et Breakout) et attend le prochain signal.</span>
+                </div>
+              </div>
 
               <div className="tags">
                 <span className="tag">Python</span>
