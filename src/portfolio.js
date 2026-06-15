@@ -376,7 +376,67 @@ const Portfolio = () => {
           </div>
         );
 
-      case 'avenir':
+      case 'parcours':
+        return (
+          <div className="section-content">
+            <h3>Mon Parcours Scolaire</h3>
+            <p style={{ color: 'var(--text-muted)', marginBottom: '2rem' }}>De Garges-lès-Gonesse à Villetaneuse, voici les étapes qui m'ont construit.</p>
+
+            {/* ===== COLLEGE ===== */}
+            <div className="card" style={{ borderLeft: '4px solid var(--accent)', paddingLeft: '1.5rem' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
+                <h4 style={{ margin: 0 }}>Collège Henri Wallon - Garges-lès-Gonesse</h4>
+                <span className="badge-year">Collège</span>
+              </div>
+              <p style={{ color: 'var(--text-muted)', marginTop: '0.3rem' }}><em>Garges-lès-Gonesse (95)</em></p>
+              <p>
+                Le collège, c'est là où tout commence. À Henri Wallon, j'ai découvert les premières bases qui allaient finalement orienter toute ma trajectoire. C'est à cette période que j'ai eu mon premier ordinateur, et que cette curiosité naturelle pour "comment ça marche" a vraiment pris forme. Je passais des heures à bidouiller, tester, comprendre. Je ne savais pas encore que ça deviendrait mon métier, mais le déclic était là.
+              </p>
+              <p>
+                Au-delà de l'informatique, le collège m'a surtout appris à travailler avec les autres. J'ai développé un sens du collectif assez tôt, que ce soit sur les projets de classe ou dans les activités parascolaires. Ce goût pour le travail en équipe, je le retrouve encore aujourd'hui dans chacun de mes projets universitaires.
+              </p>
+            </div>
+
+            {/* ===== LYCEE ===== */}
+            <div className="card" style={{ borderLeft: '4px solid var(--accent)', paddingLeft: '1.5rem' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
+                <h4 style={{ margin: 0 }}>Lycée Simone de Beauvoir - Bac STI2D</h4>
+                <span className="badge-year">Lycée</span>
+              </div>
+              <p style={{ color: 'var(--text-muted)', marginTop: '0.3rem' }}><em>Garges-lès-Gonesse (95)</em></p>
+              <p>
+                J'ai choisi la filière STI2D (Sciences et Technologies de l'Industrie et du Développement Durable) parce que c'était la voie qui se rapprochait le plus de ce que j'aimais : la technique, la conception, comprendre comment les systèmes fonctionnent. C'est un bac exigeant, avec beaucoup de travaux pratiques et de projets concrets, et ça m'a vraiment convenu. J'ai toujours mieux appris en faisant qu'en écoutant.
+              </p>
+              <p>
+                Le lycée Simone de Beauvoir m'a aussi donné une première culture de la rigueur technique. On apprenait à réfléchir en ingénieur, à poser les problèmes correctement avant de chercher des solutions. C'est une façon de penser que j'ai gardée et qui me sert encore aujourd'hui, autant en développement qu'en cybersécurité. Et c'est là que j'ai décidé de m'orienter vers l'informatique plutôt que vers d'autres filières techniques : l'immatériel m'attirait plus que le hardware.
+              </p>
+            </div>
+
+            {/* ===== BUT INFORMATIQUE ===== */}
+            <div className="card" style={{ borderLeft: '4px solid var(--accent)', paddingLeft: '1.5rem' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
+                <h4 style={{ margin: 0 }}>BUT Informatique - IUT Villetaneuse</h4>
+                <span className="badge-year">2023 - 2026</span>
+              </div>
+              <p style={{ color: 'var(--text-muted)', marginTop: '0.3rem' }}><em>Université Sorbonne Paris Nord, Villetaneuse (93)</em></p>
+              <p>
+                Intégrer le BUT Informatique à Villetaneuse en 2023, c'était un vrai choix réfléchi. Je voulais une formation courte mais dense, avec une forte composante pratique et une reconnaissance professionnelle rapide. Le BUT, c'est exactement ça : trois ans qui combinent du développement, des réseaux, de la gestion de projet, de la base de données, du système... Un tour complet du métier d'informaticien.
+              </p>
+              <p>
+                La première année a été un choc de rythme. On passe du lycée, où on a du temps, à un programme très chargé avec des projets en permanence. J'ai mis quelques semaines à trouver mes marques, mais une fois lancé, j'ai vraiment pris goût à la pédagogie par les SAÉ (Situations d'Apprentissage et d'Évaluation). Le principe : on nous donne un projet à réaliser, et on apprend les notions théoriques en les appliquant directement. Pour moi qui apprends mieux en pratiquant, c'était idéal.
+              </p>
+              <p>
+                Ces trois années m'ont donné une vision globale du monde informatique que je n'aurais pas eue ailleurs. J'ai touché à tout : du développement web et mobile, à l'administration système et réseau, en passant par les bases de données, la gestion de projet en méthode Agile, et même les bases de la cybersécurité. C'est cette transversalité qui fait aujourd'hui ma force, et qui m'a permis de mener des projets aussi variés qu'une app mobile Flutter, un générateur de diagrammes Python piloté par IA, et un bot d'automatisation pour une auto-école.
+              </p>
+              <p>
+                L'IUT de Villetaneuse, c'est aussi une équipe pédagogique impliquée. Des enseignants-chercheurs comme Haïfa Zargayouna ou Jean-Christophe Dubacq qui encadrent des projets ambitieux et poussent vraiment les étudiants à aller au fond des choses. Ce cadre m'a aidé à progresser, même sur les matières qui ne m'attiraient pas naturellement.
+              </p>
+              <p>
+                En juin 2026, je termine ce cycle avec un bilan que je juge positif, malgré des hauts et des bas. J'aurais pu être plus régulier sur certaines matières théoriques, je le reconnais. Mais les compétences que je retire de ces trois ans, techniques comme humaines, sont solides et directement applicables. La suite ? Une école d'ingénieurs, avec en ligne de mire la cybersécurité.
+              </p>
+            </div>
+          </div>
+        );
         return (
           <div className="section-content">
             <h3>Bilan Académique</h3>
@@ -432,6 +492,7 @@ const Portfolio = () => {
         <button className={`tab-button ${activeTab === 'sae' ? 'active' : ''}`} onClick={() => setActiveTab('sae')}>Projets SAÉ</button>
         <button className={`tab-button ${activeTab === 'perso' ? 'active' : ''}`} onClick={() => setActiveTab('perso')}>Projets Persos</button>
         <button className={`tab-button ${activeTab === 'competences' ? 'active' : ''}`} onClick={() => setActiveTab('competences')}>Compétences & Auto-évaluation</button>
+        <button className={`tab-button ${activeTab === 'parcours' ? 'active' : ''}`} onClick={() => setActiveTab('parcours')}>Mon Parcours</button>
         <button className={`tab-button ${activeTab === 'avenir' ? 'active' : ''}`} onClick={() => setActiveTab('avenir')}>Bilan & Avenir</button>
       </nav>
 
