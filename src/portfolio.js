@@ -252,24 +252,38 @@ const Portfolio = () => {
           <div className="section-content">
             <h3>Projets Personnels</h3>
             <div className="card">
-              <h4>Bot de Trading Algorithmique (Marché de l'Or - XAUUSD)</h4>
-              <p>Développement d'un système autonome conçu et codé de A à Z en Python, en collaboration avec un trader professionnel.</p>
-              
-              <h4>Fonctionnalités Techniques</h4>
-              <ul>
-                <li><strong>Collecte & Analyse :</strong> Récupération des données en temps réel via l'API MetaTrader 5. Calcul d'indicateurs (EMA, ATR, RSI) et détection de patterns institutionnels (Order Blocks, Smart Money Concepts).</li>
-                <li><strong>Veille Asynchrone :</strong> Moteur de news multi-sources avec système de scoring basé sur le NLP (Traitement du Langage Naturel) pour analyser le sentiment du marché.</li>
-                <li><strong>Exécution Ultra-Rapide :</strong> Prise de position à faible latence (millisecondes) lors des annonces macroéconomiques majeures (NFP, FOMC, CPI).</li>
-                <li><strong>Gestion des risques :</strong> Implémentation d'un système autonome avec Kill Switch et Trailing Stop.</li>
-              </ul>
+              <h4>Bot de Trading Algorithmique - Marché de l'Or (XAU/USD)</h4>
 
-              <p><strong>Objectif actuel :</strong> Valider une stratégie rentable sur compte démo pour un passage en production, avec l'ambition de rendre le système scalable vers des flux institutionnels comme Bloomberg ou Reuters.</p>
-              
+              <p>
+                En dehors de mes études, j'ai développé un bot de trading autonome sur le marché de l'or, en collaboration avec un trader professionnel. Pour ceux qui ne connaissent pas le trading : l'or (aussi appelé XAU/USD) est un actif financier qui fluctue en permanence en fonction de l'actualité mondiale, des décisions des banques centrales, de l'inflation, etc. Des milliers de traders achètent et vendent de l'or chaque seconde pour tenter de profiter de ces variations de prix. Mon idée : automatiser entièrement ce processus avec du code Python, pour qu'un programme prenne ces décisions à ma place, plus vite et sans émotion.
+              </p>
+
+              <p>
+                La première brique du projet, c'est la collecte de données. Le bot se connecte en temps réel aux marchés financiers via l'API MetaTrader 5 (un logiciel professionnel utilisé par les traders du monde entier) et récupère en permanence les prix de l'or à la milliseconde. À partir de ces données brutes, il calcule des indicateurs techniques comme la EMA (moyenne mobile qui lisse les variations de prix pour repérer une tendance), le RSI (qui indique si l'or est suracheté ou survendu), ou encore l'ATR (qui mesure à quel point le prix bouge fortement). Ce sont des outils classiques en analyse technique que les traders humains utilisent pour décider quand acheter ou vendre.
+              </p>
+
+              <p>
+                En plus des indicateurs classiques, j'ai intégré une logique plus avancée : la détection de patterns institutionnels. L'idée derrière ça, c'est que les grandes banques et fonds d'investissement (qu'on appelle les "institutions") laissent des traces dans les graphiques de prix quand ils passent de très gros ordres. Ces traces s'appellent des Order Blocks ou des Fair Value Gaps. Mon bot est capable de les repérer automatiquement et d'adapter ses décisions en conséquence, comme s'il "lisait" le marché à la façon d'un trader expérimenté.
+              </p>
+
+              <p>
+                Le marché de l'or réagit aussi très fortement aux grandes annonces économiques : les chiffres de l'emploi américain (NFP), les décisions de la banque centrale américaine (FOMC), ou encore les données sur l'inflation (CPI). Quand ces chiffres sont publiés, le prix de l'or peut bouger de plusieurs centaines de dollars en quelques secondes. Pour capter ces opportunités, j'ai développé un moteur de veille asynchrone qui surveille en permanence plusieurs sources d'actualités financières. Il utilise du NLP (traitement du langage naturel, la même technologie que les assistants vocaux) pour analyser le sentiment des articles : est-ce une bonne ou une mauvaise nouvelle pour l'or ? En fonction de ce score, le bot décide d'agir ou non.
+              </p>
+
+              <p>
+                La gestion du risque, c'est la partie que j'ai soignée le plus. Un bot qui trade sans protection peut perdre tout le capital en quelques minutes si le marché va à l'encontre de ses positions. J'ai donc mis en place deux mécanismes : un Kill Switch qui coupe automatiquement toutes les positions si les pertes dépassent un seuil défini, et un Trailing Stop qui sécurise les gains au fur et à mesure que le prix évolue favorablement, sans avoir besoin d'intervenir manuellement.
+              </p>
+
+              <p>
+                En ce moment, le bot tourne sur un compte démo (un compte fictif qui simule les vraies conditions du marché, sans argent réel). L'objectif est de valider que la stratégie est rentable sur plusieurs mois avant de passer en production avec de l'argent réel. À terme, j'aimerais rendre le système compatible avec des flux de données institutionnels comme Bloomberg ou Reuters pour avoir accès à des informations encore plus rapides et précises.
+              </p>
+
               <div className="tags">
                 <span className="tag">Python</span>
                 <span className="tag">asyncio & aiohttp</span>
                 <span className="tag">Pandas & Numpy</span>
                 <span className="tag">MetaTrader5 API</span>
+                <span className="tag">NLP</span>
                 <span className="tag">Event-Driven Architecture</span>
               </div>
             </div>
