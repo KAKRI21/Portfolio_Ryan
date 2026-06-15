@@ -297,7 +297,7 @@ const Portfolio = () => {
 
               <div className="image-gallery" style={{ gridTemplateColumns: '1fr', marginTop: '1.5rem' }}>
                 <div className="gallery-item">
-                  <img src={`${process.env.PUBLIC_URL}/trading.png`} alt="Bot de trading en cours d'exécution sur MetaTrader 5" style={{ height: '380px', objectFit: 'cover' }} />
+                  <img src={`${process.env.PUBLIC_URL}/trading.jpg`} alt="Bot de trading en cours d'exécution sur MetaTrader 5" style={{ height: '380px', objectFit: 'cover' }} />
                   <span className="image-caption">Le bot en production sur MetaTrader 5 - On voit les graphiques XAUUSD (or) en temps réel à gauche, et les logs d'exécution du bot dans le terminal PowerShell à droite. Chaque ligne correspond à un cycle d'analyse : le bot récupère les données, calcule les indicateurs, analyse deux stratégies (Pullback et Breakout) et attend le prochain signal.</span>
                 </div>
               </div>
