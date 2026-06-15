@@ -352,7 +352,7 @@ const Portfolio = () => {
               </div>
               <p style={{ color: 'var(--text-muted)', marginTop: '0.2rem', marginBottom: '1rem' }}><em>Stage MILAR / Europermis — Python, Playwright, CDP</em></p>
               <p>
-                C'est probablement le projet le plus concret que j'aie jamais livré. L'auto-école perdait des créneaux d'examen de conduite chaque jour face à des concurrents plus rapides. Ma mission : coder un bot qui se connecte à la plateforme gouvernementale, surveille les créneaux disponibles dès leur publication à 15h, et les réserve automatiquement — avant que quiconque ait eu le temps de cliquer.
+                C'est probablement le projet le plus concret que j'aie jamais livré. L'auto-école perdait des créneaux d'examen de conduite chaque jour face à des concurrents plus rapides. Ma mission : coder un bot qui se connecte à la plateforme gouvernementale, surveille les créneaux disponibles dès leur publication à 15h, et les réserve automatiquement avant que quiconque ait eu le temps de cliquer.
               </p>
               <p>
                 Sauf que la plateforme est bien protégée : Cloudflare Turnstile, protection Akamai, SSO Keycloak avec des injections JS qui désactivent les boutons... Autant d'obstacles que j'ai contournés un par un, en analysant les échanges réseau dans les fichiers HAR, en utilisant le protocole CDP pour piloter un vrai navigateur Chrome, en simulant de vraies frappes clavier pour passer les formulaires.
