@@ -179,6 +179,13 @@ const Portfolio = () => {
                 Sans hésiter : avoir livré un bot qui tourne en production et qui réserve de vraies places pour de vrais élèves. En moins de 200 millisecondes. C'est quelque chose de concret, de mesurable, et d'utile au quotidien pour l'auto-école. Quand j'ai vu les premières réservations s'effectuer automatiquement à 15h01 alors que les autres auto-écoles n'avaient pas encore rafraîchi leur page, j'ai vraiment senti que le travail en valait la peine.
               </p>
 
+              <div className="image-gallery" style={{ gridTemplateColumns: '1fr', marginTop: '1rem' }}>
+                <div className="gallery-item">
+                  <img src={`${process.env.PUBLIC_URL}/rdv.jpg`} alt="Terminal du bot en train de réserver un créneau d'examen" style={{ height: '320px', objectFit: 'cover' }} />
+                  <span className="image-caption">Capture du terminal pendant l'exécution du bot : détection d'un créneau disponible et tentative de réservation automatique en temps réel.</span>
+                </div>
+              </div>
+
               <div className="tags">
                 <span className="tag">Python</span>
                 <span className="tag">asyncio</span>
@@ -360,12 +367,6 @@ const Portfolio = () => {
               <p>C'est probablement le projet le plus concret que j'aie jamais livré. L'auto-école perdait des créneaux d'examen de conduite chaque jour face à des concurrents plus rapides. Ma mission : coder un bot qui se connecte à la plateforme gouvernementale, surveille les créneaux disponibles dès leur publication à 15h, et les réserve automatiquement avant que quiconque ait eu le temps de cliquer.</p>
               <p>Sauf que la plateforme est bien protégée : Cloudflare Turnstile, protection Akamai, SSO Keycloak avec des injections JS qui désactivent les boutons. Autant d'obstacles que j'ai contournés un par un, en analysant les échanges réseau dans les fichiers HAR, en utilisant le protocole CDP pour piloter un vrai navigateur Chrome, en simulant de vraies frappes clavier pour passer les formulaires.</p>
               <p>Le résultat ? Un bot qui tourne en production, qui réserve des places pour de vrais élèves, et qui a remplacé des heures de surveillance manuelle quotidienne. La première fois que j'ai vu une réservation s'effectuer toute seule à 15h01, pendant que les concurrents rafraîchissaient encore leur page manuellement, j'ai compris que le travail en valait vraiment la peine.</p>
-              <div className="image-gallery" style={{ gridTemplateColumns: '1fr', marginTop: '1rem', marginBottom: '1rem' }}>
-                <div className="gallery-item">
-                  <img src={`${process.env.PUBLIC_URL}/rdv.jpg`} alt="Terminal du bot en train de réserver un créneau d'examen" style={{ height: '320px', objectFit: 'cover' }} />
-                  <span className="image-caption">Capture du terminal pendant l'exécution du bot : détection d'un créneau disponible et tentative de réservation automatique en temps réel.</span>
-                </div>
-              </div>
               <div className="tags" style={{ marginTop: '1rem' }}>
                 <span className="tag">Python</span>
                 <span className="tag">Playwright & CDP</span>
