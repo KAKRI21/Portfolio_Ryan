@@ -39,84 +39,27 @@ const Portfolio = () => {
                 Mon stage chez CM-MP en deuxième année, c'est vraiment là que tout a cliqué pour moi. Pour la première fois, j'ai eu affaire à de vraies infrastructures informatiques : gérer des serveurs en production, configurer des réseaux, intervenir sur des incidents de sécurité réels. Pas du labo, du vrai travail qui a du poids. Ça m'a donné confiance en mes compétences techniques et a confirmé que je voulais faire de la cybersécurité, pas juste en théorie, mais en vrai.
               </p>
             </div>
-          </div>
-        );
 
-      case 'culture':
-        return (
-          <div className="section-content">
-            <h3>Veille, Culture & Ouverture</h3>
-
-            <div className="card">
-              <h4>CTF et pratique du hacking éthique</h4>
-              <p>
-                En dehors des cours, je passe pas mal de temps sur des plateformes comme TryHackMe, Root-Me et Hack The Box. Ce ne sont pas juste des exercices scolaires pour moi, c'est vraiment quelque chose que je fais par plaisir. Les CTF (Capture The Flag), c'est une forme de compétition où tu dois pirater des systèmes volontairement vulnérables pour récupérer des "flags" cachés. Ça couvre plein de domaines : l'exploitation web, le reverse engineering, la cryptographie, le forensics. C'est exigeant, parfois frustrant, mais quand tu trouves la faille après des heures à chercher, c'est une vraie satisfaction.
-              </p>
-              <p>
-                Je me rends aussi régulièrement à des salons informatiques et événements autour de la cybersécurité. C'est une bonne façon de voir ce qui se fait en dehors de l'université, d'échanger avec des professionnels et de rester connecté à un milieu qui bouge très vite.
-              </p>
-            </div>
-
-            <div className="card">
-              <h4>Ma veille technologique au quotidien</h4>
-              <p>
-                La cybersécurité évolue tellement vite qu'il faut se tenir informé en permanence, sinon tu décroches. Pour ça, j'ai mis en place une routine de veille assez simple mais efficace. Du côté cyber, je suis les rapports du CERT-FR, je consulte régulièrement les nouvelles failles CVE publiées, et je lis des analyses sur OWASP pour comprendre les vecteurs d'attaque les plus courants. Sur Reddit, le subreddit r/netsec est une bonne source pour des discussions techniques sérieuses. Pour les formats plus accessibles, j'écoute des podcasts comme Le Comptoir Sécu et je regarde les vidéos d'Underscore_, qui vulgarise des sujets complexes sans les vider de leur substance.
-              </p>
-              <p>
-                Sur l'IA et le développement, je suis l'évolution des grands modèles de langage via GitHub et des newsletters comme TLDR. C'est un domaine qui m'intéresse autant d'un point de vue technique que stratégique, notamment ce que ça implique en termes de souveraineté numérique.
-              </p>
-            </div>
-
-            <div className="card">
-              <h4>Lectures : les livres du Rabbin des Bois</h4>
-              <p>
-                Le Rabbin des Bois est un hacker français qui a choisi de raconter son parcours dans deux livres accessibles au grand public. Ce qui m'a accroché dès le départ, c'est son ton : pas de chichis, pas de jargon pour impressionner, juste quelqu'un qui raconte comment il pense, comment il travaille, et ce que ça implique vraiment d'évoluer dans ce milieu.
-              </p>
-
-              <div className="grid-2" style={{ marginTop: '1.5rem' }}>
-                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
-                  <img
-                    src={`${process.env.PUBLIC_URL}/leve.jpg`}
-                    alt="Lève-toi et code - Confessions d'un hacker"
-                    style={{ width: '160px', borderRadius: '6px', boxShadow: '0 4px 16px rgba(0,0,0,0.18)' }}
-                  />
-                  <div>
-                    <h5 style={{ margin: '0 0 0.5rem 0' }}>Lève-toi et code — Confessions d'un hacker</h5>
-                    <p>
-                      C'est le premier livre que j'ai lu de lui, et honnêtement je ne m'attendais pas à ce que ça me parle autant. Il y raconte comment il est devenu hacker, ses premières intrusions, ses erreurs, les zones grises éthiques qu'il a traversées. Ce qui est intéressant, c'est qu'il ne se présente pas comme un héros ou un génie : il montre que le hacking c'est avant tout de la curiosité, de la persévérance, et beaucoup de temps passé à comprendre des systèmes que les autres n'ont pas pris la peine d'étudier. J'ai retrouvé dans ce livre exactement la façon dont moi j'aborde les problèmes techniques.
-                    </p>
-                  </div>
-                </div>
-                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
-                  <img
-                    src={`${process.env.PUBLIC_URL}/princess.jpg`}
-                    alt="Princesse Data"
-                    style={{ width: '160px', borderRadius: '6px', boxShadow: '0 4px 16px rgba(0,0,0,0.18)' }}
-                  />
-                  <div>
-                    <h5 style={{ margin: '0 0 0.5rem 0' }}>Princesse Data</h5>
-                    <p>
-                      Le deuxième livre est un peu différent dans l'approche. Il aborde les données personnelles, leur valeur économique, et comment elles sont collectées, revendues et exploitées à notre insu. C'est un sujet qui touche directement à la cybersécurité, mais vu d'un angle grand public. Ce qui m'a plu, c'est que le Rabbin des Bois n'est pas alarmiste pour faire peur : il explique froidement les mécanismes, et ça donne envie de comprendre plutôt que de paniquer. Pour moi qui m'intéresse à la protection des données et à la sécurité des systèmes d'information, c'était une lecture utile autant que stimulante.
-                    </p>
-                  </div>
-                </div>
+            <h3>Passeport Culturel & Ouverture</h3>
+            <div className="grid-2">
+              <div className="card">
+                <h4>Événements & Pratique (CTF)</h4>
+                <p>Visant une spécialisation en Pentest, je m'entraîne régulièrement sur TryHackMe, Root-Me et Hack The Box. Je participe à des CTF (Capture The Flag) pour pratiquer l'intrusion éthique et le reverse engineering. Je me rends aussi régulièrement à des salons informatiques pour échanger avec des experts et voir des démonstrations industrielles.</p>
+              </div>
+              <div className="card">
+                <h4>Veille Technologique</h4>
+                <p><strong>Cyber :</strong> Suivi quotidien des failles CVE, rapports CERT-FR, méthodologies OWASP via Reddit (r/netsec) et médias spécialisés (Underscore_, Le Comptoir Sécu).</p>
+                <p><strong>IA & Dév :</strong> Suivi de l'évolution des LLM mondiaux et du Prompt Engineering via des newsletters tech (TLDR) et GitHub.</p>
               </div>
             </div>
 
             <div className="card">
               <h4>Ouverture à l'international</h4>
-              <p>
-                Je pense que dans l'informatique, et encore plus en cybersécurité, se limiter à ce qui se passe en France c'est une erreur. Les menaces sont mondiales, les standards de sécurité sont souvent portés par des organisations américaines ou européennes, et les meilleures ressources sont majoritairement en anglais. C'est pour ça que j'ai toujours cherché à m'exposer à un contexte plus large que mon environnement direct.
-              </p>
-              <p>
-                Ma double culture, le français et le kurde comme langues maternelles, plus l'anglais technique que j'utilise tous les jours sur TryHackMe et dans les documentations, m'a donné un réflexe naturel pour aller chercher l'information là où elle se trouve vraiment, pas juste là où c'est le plus facile d'accès.
-              </p>
-              <p>
-                En SAÉ S6, on a eu l'occasion de travailler sur une comparaison entre DeepSeek, l'IA développée en Chine, et les grands modèles américains comme Claude ou ChatGPT. C'était pas juste un exercice technique : ça m'a amené à réfléchir sérieusement aux enjeux de souveraineté numérique, à qui contrôle les données, et à ce que ça change concrètement selon l'outil qu'on choisit d'utiliser. Ce genre de réflexion géopolitique autour de la tech, je trouve ça aussi important que les compétences purement techniques.
-              </p>
-              <p>
-                À terme, j'ai vraiment envie d'exercer dans un contexte international, que ce soit via un VIE, un stage à l'étranger ou une multinationale. Pas pour fuir la France, mais parce que travailler dans un environnement multiculturel, ça change la façon dont on résout les problèmes, et ça correspond à qui je suis.
-              </p>
+              <ul>
+                <li><strong>Géopolitique Tech :</strong> En SAÉ S6, j'ai étudié l'IA chinoise DeepSeek face aux géants américains (Claude, ChatGPT) pour comprendre les enjeux de la "Guerre Froide" technologique.</li>
+                <li><strong>Langues :</strong> Français et Kurde (maternelles), Anglais B2 - maîtrisé au quotidien (TryHackMe, documentations Flutter/Python, rapports de failles).</li>
+                <li><strong>Ambition :</strong> Totalement mobile, j'envisage ma carrière à l'international (stage, VIE ou multinationale) pour exercer mon métier dans un contexte multiculturel.</li>
+              </ul>
             </div>
 
             <div className="card">
@@ -272,17 +215,34 @@ const Portfolio = () => {
                   <li><a href="https://github.com/KAKRI21/SAE_S501_BUT3" target="_blank" rel="noreferrer">github.com/KAKRI21/SAE_S501_BUT3</a></li>
                 </ul>
               </div>
-              <p>En début de troisième année, j'ai participé à la conception d'une application mobile appelée MIAAM. L'idée générale ? Créer un outil qui aide les gens à réduire leur gaspillage alimentaire au quotidien en leur proposant des recettes intelligentes basées sur leurs ingrédients disponibles et leurs préférences. Le slogan qu'on a choisi, "Réduire le gaspillage, un repas à la fois", résume bien l'approche progressive qu'on a voulue : pas culpabilisant, juste pratique et accessible.</p>
-              <p>Ma contribution a porté sur deux axes. D'abord, j'ai travaillé avec l'équipe sur l'identité visuelle de l'app : la charte graphique, le logo, les couleurs. On a beaucoup discuté autour de la question du ton. Comment sensibiliser à l'écologie sans adopter un discours moralisateur qui va faire fuir les utilisateurs ? On a opté pour une palette chaleureuse avec du beige clair (pour la douceur) et du brun (pour l'ancrage au quotidien). Ensuite, j'ai géré la logique métier : les systèmes de profils utilisateurs, la personnalisation, l'organisation des données autour des ingrédients et des allergènes.</p>
-              <p>Le vrai défi technique a été de proposer des recettes réellement pertinentes et variées sans dérouter l'utilisateur avec des suggestions trop exotiques ou hors de sa zone de confort culinaire. J'ai développé pour ça un algorithme basé sur une topologie culturelle mondiale. L'idée était de mapper plus de 100 traditions culinaires et de créer des ponts logiques entre elles. Par exemple, si tu aimes la cuisine méditerranéenne, l'algo va progressivement t'introduire à des cuisines proches plutôt que de te proposer soudain un repas thaï. Ça a vraiment amélioré la pertinence des recommandations.</p>
-              <p>Un autre enjeu majeur : tout fonctionne en mode hors-ligne sur le téléphone via une base SQLite embarquée. Ça signifie que l'app doit être extrêmement économe en ressources, sans quoi elle va vider la batterie en deux heures. J'ai donc passé du temps à optimiser drastiquement les requêtes SQL et les traitements pour que la navigation reste fluide même sans réseau.</p>
-              <p>À la fin, on a livré une application complète et performante qui intègre un Éco-Score pour chaque recette. Ce projet m'a vraiment marqué sur un point : l'importance de ne pas opposer architecture technique rigoureuse et expérience utilisateur. C'est l'équilibre entre les deux qui crée un produit vraiment utile.</p>
+
+              <p>
+                En début de troisième année, j'ai participé à la conception d'une application mobile appelée MIAAM. L'idée générale ? Créer un outil qui aide les gens à réduire leur gaspillage alimentaire au quotidien en leur proposant des recettes intelligentes basées sur leurs ingrédients disponibles et leurs préférences. Le slogan qu'on a choisi, "Réduire le gaspillage, un repas à la fois", résume bien l'approche progressive qu'on a voulue : pas culpabilisant, juste pratique et accessible.
+              </p>
+              <p>
+                Ma contribution a porté sur deux axes. D'abord, j'ai travaillé avec l'équipe sur l'identité visuelle de l'app : la charte graphique, le logo, les couleurs. On a beaucoup discuté autour de la question du ton. Comment sensibiliser à l'écologie sans adopter un discours moralisateur qui va faire fuir les utilisateurs ? On a opté pour une palette chaleureuse avec du beige clair (pour la douceur) et du brun (pour l'ancrage au quotidien). Ensuite, j'ai géré la logique métier : les systèmes de profils utilisateurs, la personnalisation, l'organisation des données autour des ingrédients et des allergènes.
+              </p>
+              <p>
+                Le vrai défi technique a été de proposer des recettes réellement pertinentes et variées sans dérouter l'utilisateur avec des suggestions trop exotiques ou hors de sa zone de confort culinaire. J'ai développé pour ça un algorithme basé sur une topologie culturelle mondiale. L'idée était de mapper plus de 100 traditions culinaires et de créer des ponts logiques entre elles. Par exemple, si tu aimes la cuisine méditerranéenne, l'algo va progressivement t'introduire à des cuisines proches plutôt que de te proposer soudain un repas thaï. Ça a vraiment amélioré la pertinence des recommandations.
+              </p>
+              <p>
+                Un autre enjeu majeur : tout fonctionne en mode hors-ligne sur le téléphone via une base SQLite embarquée. Ça signifie que l'app doit être extrêmement économe en ressources, sans quoi elle va vider la batterie en deux heures. J'ai donc passé du temps à optimiser drastiquement les requêtes SQL et les traitements pour que la navigation reste fluide même sans réseau.
+              </p>
+              <p>
+                À la fin, on a livré une application complète et performante qui intègre un Éco-Score pour chaque recette. Ce projet m'a vraiment marqué sur un point : l'importance de ne pas opposer architecture technique rigoureuse et expérience utilisateur. C'est l'équilibre entre les deux qui crée un produit vraiment utile.
+              </p>
+
               <div className="image-gallery" style={{ gridTemplateColumns: '1fr', marginTop: '1.5rem' }}>
                 <div className="gallery-item">
-                  <img src={`${process.env.PUBLIC_URL}/miaam.jpg`} alt="Page d'accueil de l'application MIAAM" style={{ height: '500px', objectFit: 'contain', background: '#f5f5f5' }} />
-                  <span className="image-caption">Page d'accueil de l'app MIAAM - Modes Découverte et Recommandation.</span>
+                  <img
+                    src={`${process.env.PUBLIC_URL}/miaam.jpg`}
+                    alt="Page d'accueil de l'application MIAAM"
+                    style={{ height: '500px', objectFit: 'contain', background: '#f5f5f5' }}
+                  />
+                  <span className="image-caption">Page d'accueil de l'app MIAAM - Modes Découverte et Recommandation. L'interface affiche la recette du jour et les top recettes personnalisées selon le profil utilisateur.</span>
                 </div>
               </div>
+
               <div className="tags">
                 <span className="tag">Flutter</span>
                 <span className="tag">SQLite</span>
@@ -300,11 +260,26 @@ const Portfolio = () => {
                   <li><a href="https://github.com/A-Sajith/A-Sajith-SAE_Veronoi_Equipe_i" target="_blank" rel="noreferrer">github.com/A-Sajith/A-Sajith-SAE_Veronoi_Equipe_i</a></li>
                 </ul>
               </div>
-              <p>En fin de troisième année, j'ai eu un projet un peu différent : il fallait créer une application capable de générer et visualiser des diagrammes de Voronoï à partir d'un fichier de coordonnées. Mais le vrai sujet de fond n'était pas juste d'implémenter l'algo : c'était d'évaluer comment les IA génératives pouvaient nous aider dans le développement, et quels étaient les risques associés.</p>
-              <p>Le projet avait trois phases. Phase 1, on développait l'application sans IA, juste nous à la main. Phase 2, on la redéveloppait en utilisant 4 IA génératives différentes pour voir lesquelles étaient les plus efficaces. Phase 3, on analysait les risques : souveraineté numérique, légalité, qualité du code généré, impact environnemental. Pour ma part, j'étais en charge de la Phase 2 comme "Prompt Engineer" attitré, et je devais aussi analyser une dimension des risques.</p>
-              <p>Dès le départ, j'ai choisi de tester DeepSeek, l'IA chinoise, pour avoir une alternative aux solutions américaines dominantes (Claude, ChatGPT, Grok). Ça m'intéressait de confronter les performances, mais aussi de réfléchir aux enjeux de souveraineté technologique. Avec DeepSeek, j'ai lancé le développement, mais rapidement, j'ai rencontré des blocages. L'arborescence du code qu'elle générait était cassée, les imports ne marchaient pas. Ça m'a appris une première leçon : l'IA génère vite, mais c'est du code brut qui a besoin de beaucoup de polissage.</p>
-              <p>Le défi vraiment intéressant a été le rendu graphique. L'app était censée afficher les diagrammes en SVG et en PNG, mais au départ, les couleurs étaient confondues, les arêtes du diagramme n'étaient pas tracées correctement. Là, j'ai dû devenir vraiment "prompt engineer" : j'ai fait 26 itérations avec l'IA. À chaque fois, je lui fournissais les logs d'erreurs du terminal et des captures d'écran des défauts visuels pour la forcer à corriger précisément le tracé. C'était long, mais ça a marché.</p>
-              <p>En moins d'une heure au total, j'avais un module fonctionnel. Ce projet m'a appris quelque chose de crucial : l'IA générative offre un vrai gain de rapidité et de productivité, c'est indéniable. Mais elle ne remplace absolument pas l'esprit critique d'un développeur. La vraie compétence, c'est de savoir exploiter l'IA tout en gardant un regard critique.</p>
+
+              <p>
+                En fin de troisième année, j'ai eu un projet un peu différent : il fallait créer une application capable de générer et visualiser des diagrammes de Voronoï à partir d'un fichier de coordonnées. Mais le vrai sujet de fond n'était pas juste d'implémenter l'algo : c'était d'évaluer comment les IA génératives pouvaient nous aider dans le développement, et quels étaient les risques associés.
+              </p>
+              <p>
+                Le projet avait trois phases. Phase 1, on développait l'application sans IA, juste nous à la main. Phase 2, on la redéveloppait en utilisant 4 IA génératives différentes pour voir lesquelles étaient les plus efficaces. Phase 3, on analysait les risques : souveraineté numérique, légalité, qualité du code généré, impact environnemental. Pour ma part, j'étais en charge de la Phase 2 comme "Prompt Engineer" attitré, et je devais aussi analyser une dimension des risques.
+              </p>
+              <p>
+                Dès le départ, j'ai choisi de tester DeepSeek, l'IA chinoise, pour avoir une alternative aux solutions américaines dominantes (Claude, ChatGPT, Grok). Ça m'intéressait de confronter les performances, mais aussi de réfléchir aux enjeux de souveraineté technologique. Avec DeepSeek, j'ai lancé le développement, mais rapidement, j'ai rencontré des blocages. L'arborescence du code qu'elle générait était cassée, les imports ne marchaient pas. J'ai eu beau expliquer le problème, elle ne comprenait pas bien. Ça m'a appris une première leçon : l'IA génère vite, mais c'est du code brut qui a besoin de beaucoup de polissage.
+              </p>
+              <p>
+                Le défi vraiment intéressant a été le rendu graphique. L'app était censée afficher les diagrammes en SVG et en PNG, mais au départ, les couleurs étaient confondues, les arêtes du diagramme n'étaient pas tracées correctement. Là, j'ai dû devenir vraiment "prompt engineer" : j'ai fait 26 itérations avec l'IA. À chaque fois, je lui fournissais les logs d'erreurs du terminal et des captures d'écran des défauts visuels pour la forcer à corriger précisément le tracé. C'était long, mais ça a marché. La clé était de guider l'IA avec des informations très concrètes plutôt que des descriptions vagues.
+              </p>
+              <p>
+                En testant l'application, j'ai aussi découvert qu'elle avait une contrainte arbitraire : elle refusait de fonctionner avec moins de 3 points. Pourquoi 3 ? Aucune bonne raison. C'était juste une limite que l'IA avait introduite par défaut sans qu'on le demande. Je l'ai signalé et j'ai demandé la suppression de cette contrainte pour que l'app soit vraiment flexible.
+              </p>
+              <p>
+                En moins d'une heure au total, j'avais un module fonctionnel. Ce projet m'a appris quelque chose de crucial : l'IA générative offre un vrai gain de rapidité et de productivité, c'est indéniable. Mais elle ne remplace absolument pas l'esprit critique d'un développeur. Sans capacités solides en débogage, en lecture de logs, en tests unitaires et en réflexion stratégique, le code généré reste inutilisable. La vraie compétence, c'est de savoir exploiter l'IA tout en gardant un regard critique.
+              </p>
+
               <div className="tags">
                 <span className="tag">Python</span>
                 <span className="tag">DeepSeek</span>
@@ -322,17 +297,33 @@ const Portfolio = () => {
             <h3>Projets Personnels</h3>
             <div className="card">
               <h4>Bot de Trading Algorithmique - Marché de l'Or (XAU/USD)</h4>
-              <p>En dehors de mes études, j'ai développé un bot de trading autonome sur le marché de l'or, en collaboration avec un trader professionnel. Pour ceux qui ne connaissent pas le trading : l'or (aussi appelé XAU/USD) est un actif financier qui fluctue en permanence en fonction de l'actualité mondiale, des décisions des banques centrales, de l'inflation, etc. Mon idée : automatiser entièrement ce processus avec du code Python, pour qu'un programme prenne ces décisions à ma place, plus vite et sans émotion.</p>
-              <p>La première brique du projet, c'est la collecte de données. Le bot se connecte en temps réel aux marchés financiers via l'API MetaTrader 5 et récupère en permanence les prix de l'or à la milliseconde. À partir de ces données brutes, il calcule des indicateurs techniques comme la EMA, le RSI, ou encore l'ATR. Ce sont des outils classiques en analyse technique que les traders humains utilisent pour décider quand acheter ou vendre.</p>
-              <p>En plus des indicateurs classiques, j'ai intégré une logique plus avancée : la détection de patterns institutionnels. L'idée derrière ça, c'est que les grandes banques et fonds d'investissement laissent des traces dans les graphiques de prix quand ils passent de très gros ordres. Ces traces s'appellent des Order Blocks ou des Fair Value Gaps. Mon bot est capable de les repérer automatiquement et d'adapter ses décisions en conséquence.</p>
-              <p>Le marché de l'or réagit aussi très fortement aux grandes annonces économiques : les chiffres de l'emploi américain (NFP), les décisions de la banque centrale américaine (FOMC), ou encore les données sur l'inflation (CPI). Pour capter ces opportunités, j'ai développé un moteur de veille asynchrone qui utilise du NLP pour analyser le sentiment des articles financiers en temps réel.</p>
-              <p>La gestion du risque, c'est la partie que j'ai soignée le plus. J'ai mis en place un Kill Switch qui coupe automatiquement toutes les positions si les pertes dépassent un seuil défini, et un Trailing Stop qui sécurise les gains au fur et à mesure. En ce moment, le bot tourne sur un compte démo pour valider la stratégie sur plusieurs mois avant de passer en conditions réelles.</p>
+
+              <p>
+                En dehors de mes études, j'ai développé un bot de trading autonome sur le marché de l'or, en collaboration avec un trader professionnel. Pour ceux qui ne connaissent pas le trading : l'or (aussi appelé XAU/USD) est un actif financier qui fluctue en permanence en fonction de l'actualité mondiale, des décisions des banques centrales, de l'inflation, etc. Des milliers de traders achètent et vendent de l'or chaque seconde pour tenter de profiter de ces variations de prix. Mon idée : automatiser entièrement ce processus avec du code Python, pour qu'un programme prenne ces décisions à ma place, plus vite et sans émotion.
+              </p>
+              <p>
+                La première brique du projet, c'est la collecte de données. Le bot se connecte en temps réel aux marchés financiers via l'API MetaTrader 5 (un logiciel professionnel utilisé par les traders du monde entier) et récupère en permanence les prix de l'or à la milliseconde. À partir de ces données brutes, il calcule des indicateurs techniques comme la EMA (moyenne mobile qui lisse les variations de prix pour repérer une tendance), le RSI (qui indique si l'or est suracheté ou survendu), ou encore l'ATR (qui mesure à quel point le prix bouge fortement). Ce sont des outils classiques en analyse technique que les traders humains utilisent pour décider quand acheter ou vendre.
+              </p>
+              <p>
+                En plus des indicateurs classiques, j'ai intégré une logique plus avancée : la détection de patterns institutionnels. L'idée derrière ça, c'est que les grandes banques et fonds d'investissement (qu'on appelle les "institutions") laissent des traces dans les graphiques de prix quand ils passent de très gros ordres. Ces traces s'appellent des Order Blocks ou des Fair Value Gaps. Mon bot est capable de les repérer automatiquement et d'adapter ses décisions en conséquence, comme s'il "lisait" le marché à la façon d'un trader expérimenté.
+              </p>
+              <p>
+                Le marché de l'or réagit aussi très fortement aux grandes annonces économiques : les chiffres de l'emploi américain (NFP), les décisions de la banque centrale américaine (FOMC), ou encore les données sur l'inflation (CPI). Quand ces chiffres sont publiés, le prix de l'or peut bouger de plusieurs centaines de dollars en quelques secondes. Pour capter ces opportunités, j'ai développé un moteur de veille asynchrone qui surveille en permanence plusieurs sources d'actualités financières. Il utilise du NLP (traitement du langage naturel, la même technologie que les assistants vocaux) pour analyser le sentiment des articles : est-ce une bonne ou une mauvaise nouvelle pour l'or ? En fonction de ce score, le bot décide d'agir ou non.
+              </p>
+              <p>
+                La gestion du risque, c'est la partie que j'ai soignée le plus. Un bot qui trade sans protection peut perdre tout le capital en quelques minutes si le marché va à l'encontre de ses positions. J'ai donc mis en place deux mécanismes : un Kill Switch qui coupe automatiquement toutes les positions si les pertes dépassent un seuil défini, et un Trailing Stop qui sécurise les gains au fur et à mesure que le prix évolue favorablement, sans avoir besoin d'intervenir manuellement.
+              </p>
+              <p>
+                En ce moment, le bot tourne sur un compte démo (un compte fictif qui simule les vraies conditions du marché, sans argent réel). L'objectif est de valider que la stratégie est rentable sur plusieurs mois avant de passer en production avec de l'argent réel. À terme, j'aimerais rendre le système compatible avec des flux de données institutionnels comme Bloomberg ou Reuters pour avoir accès à des informations encore plus rapides et précises.
+              </p>
+
               <div className="image-gallery" style={{ gridTemplateColumns: '1fr', marginTop: '1.5rem' }}>
                 <div className="gallery-item">
                   <img src={`${process.env.PUBLIC_URL}/trading.jpg`} alt="Bot de trading en cours d'exécution sur MetaTrader 5" style={{ height: '380px', objectFit: 'cover' }} />
-                  <span className="image-caption">Le bot en production sur MetaTrader 5 avec les graphiques XAUUSD en temps réel et les logs d'exécution dans le terminal PowerShell.</span>
+                  <span className="image-caption">Le bot en production sur MetaTrader 5 - On voit les graphiques XAUUSD (or) en temps réel à gauche, et les logs d'exécution du bot dans le terminal PowerShell à droite. Chaque ligne correspond à un cycle d'analyse : le bot récupère les données, calcule les indicateurs, analyse deux stratégies (Pullback et Breakout) et attend le prochain signal.</span>
                 </div>
               </div>
+
               <div className="tags" style={{ marginTop: '1rem' }}>
                 <span className="tag">Python</span>
                 <span className="tag">asyncio & aiohttp</span>
@@ -345,6 +336,9 @@ const Portfolio = () => {
           </div>
         );
 
+      // ============================================================
+      // MES FIERTÉS (NOUVELLE SECTION)
+      // ============================================================
       case 'fiertes':
         return (
           <div className="section-content">
@@ -357,9 +351,15 @@ const Portfolio = () => {
                 <h4 style={{ margin: 0 }}>Un bot qui réserve des places d'examen en moins de 200ms</h4>
               </div>
               <p style={{ color: 'var(--text-muted)', marginTop: '0.2rem', marginBottom: '1rem' }}><em>Stage MILAR / Europermis — Python, Playwright, CDP</em></p>
-              <p>C'est probablement le projet le plus concret que j'aie jamais livré. L'auto-école perdait des créneaux d'examen de conduite chaque jour face à des concurrents plus rapides. Ma mission : coder un bot qui se connecte à la plateforme gouvernementale, surveille les créneaux disponibles dès leur publication à 15h, et les réserve automatiquement avant que quiconque ait eu le temps de cliquer.</p>
-              <p>Sauf que la plateforme est bien protégée : Cloudflare Turnstile, protection Akamai, SSO Keycloak avec des injections JS qui désactivent les boutons. Autant d'obstacles que j'ai contournés un par un, en analysant les échanges réseau dans les fichiers HAR, en utilisant le protocole CDP pour piloter un vrai navigateur Chrome, en simulant de vraies frappes clavier pour passer les formulaires.</p>
-              <p>Le résultat ? Un bot qui tourne en production, qui réserve des places pour de vrais élèves, et qui a remplacé des heures de surveillance manuelle quotidienne. La première fois que j'ai vu une réservation s'effectuer toute seule à 15h01, pendant que les concurrents rafraîchissaient encore leur page manuellement, j'ai compris que le travail en valait vraiment la peine.</p>
+              <p>
+                C'est probablement le projet le plus concret que j'aie jamais livré. L'auto-école perdait des créneaux d'examen de conduite chaque jour face à des concurrents plus rapides. Ma mission : coder un bot qui se connecte à la plateforme gouvernementale, surveille les créneaux disponibles dès leur publication à 15h, et les réserve automatiquement avant que quiconque ait eu le temps de cliquer.
+              </p>
+              <p>
+                Sauf que la plateforme est bien protégée : Cloudflare Turnstile, protection Akamai, SSO Keycloak avec des injections JS qui désactivent les boutons... Autant d'obstacles que j'ai contournés un par un, en analysant les échanges réseau dans les fichiers HAR, en utilisant le protocole CDP pour piloter un vrai navigateur Chrome, en simulant de vraies frappes clavier pour passer les formulaires.
+              </p>
+              <p>
+                Le résultat ? Un bot qui tourne en production, qui réserve des places pour de vrais élèves, et qui a remplacé des heures de surveillance manuelle quotidienne. La première fois que j'ai vu une réservation s'effectuer toute seule à 15h01, pendant que les concurrents rafraîchissaient encore leur page manuellement, j'ai compris que le travail en valait vraiment la peine.
+              </p>
               <div className="tags" style={{ marginTop: '1rem' }}>
                 <span className="tag">Python</span>
                 <span className="tag">Playwright & CDP</span>
@@ -375,9 +375,15 @@ const Portfolio = () => {
                 <h4 style={{ margin: 0 }}>Un bot de trading qui lit le marché de l'or en temps réel</h4>
               </div>
               <p style={{ color: 'var(--text-muted)', marginTop: '0.2rem', marginBottom: '1rem' }}><em>Projet personnel — Python, MetaTrader5 API, NLP</em></p>
-              <p>Le trading algorithmique, c'est un sujet qui m'a toujours intrigué. Pas pour l'argent en premier lieu, mais pour le défi technique : comment coder un programme capable de lire des données financières en temps réel, d'analyser des patterns complexes, et de prendre des décisions d'achat ou de vente en quelques millisecondes ?</p>
-              <p>J'ai développé ce bot en collaboration avec un trader professionnel, ce qui m'a forcé à apprendre un vocabulaire et une logique totalement nouveaux. Le bot se connecte via l'API MetaTrader 5, récupère les prix de l'or à la milliseconde, et analyse en parallèle les actualités économiques via du NLP pour détecter si une annonce (NFP, FOMC, CPI) va faire monter ou descendre le cours.</p>
-              <p>Ce qui m'a le plus appris ici, c'est la gestion du risque. Un bot qui trade sans protection peut tout perdre en quelques minutes si le marché part dans le mauvais sens. J'ai donc implémenté un Kill Switch automatique et un Trailing Stop pour sécuriser les gains. Le bot tourne actuellement sur un compte démo pour valider la stratégie sur plusieurs mois avant de passer en conditions réelles.</p>
+              <p>
+                Le trading algorithmique, c'est un sujet qui m'a toujours intrigué. Pas pour l'argent en premier lieu, mais pour le défi technique : comment coder un programme capable de lire des données financières en temps réel, d'analyser des patterns complexes, et de prendre des décisions d'achat ou de vente en quelques millisecondes ?
+              </p>
+              <p>
+                J'ai développé ce bot en collaboration avec un trader professionnel, ce qui m'a forcé à apprendre un vocabulaire et une logique totalement nouveaux : EMA, RSI, Order Blocks, Fair Value Gaps. Le bot se connecte via l'API MetaTrader 5, récupère les prix de l'or à la milliseconde, et analyse en parallèle les actualités économiques via du NLP pour détecter si une annonce (NFP, FOMC, CPI) va faire monter ou descendre le cours.
+              </p>
+              <p>
+                Ce qui m'a le plus appris ici, c'est la gestion du risque. Un bot qui trade sans protection peut tout perdre en quelques minutes si le marché part dans le mauvais sens. J'ai donc implémenté un Kill Switch automatique et un Trailing Stop pour sécuriser les gains. Le bot tourne actuellement sur un compte démo pour valider la stratégie sur plusieurs mois avant de passer en conditions réelles.
+              </p>
               <div className="tags" style={{ marginTop: '1rem' }}>
                 <span className="tag">Python</span>
                 <span className="tag">MetaTrader5 API</span>
@@ -393,9 +399,15 @@ const Portfolio = () => {
                 <h4 style={{ margin: 0 }}>MIAAM — une app mobile qui pense à ta place en cuisine</h4>
               </div>
               <p style={{ color: 'var(--text-muted)', marginTop: '0.2rem', marginBottom: '1rem' }}><em>SAÉ S5, IUT Villetaneuse — Flutter, SQLite, MVC</em></p>
-              <p>MIAAM, c'est une app qu'on a conçue en équipe pour aider les gens à ne plus gaspiller leurs ingrédients. L'idée de départ est simple : tu rentres ce que t'as dans le frigo, l'app te propose des recettes adaptées à tes goûts et à tes allergies. Mais derrière cette simplicité, il y avait pas mal de défis techniques.</p>
-              <p>Mon travail a porté sur l'algorithme de recommandation. Le problème : comment proposer des recettes variées et pertinentes sans déstabiliser l'utilisateur avec des suggestions trop exotiques ? J'ai développé une topologie culturelle mondiale qui mappe plus de 100 cuisines et crée des ponts logiques entre elles. Si tu aimes la cuisine méditerranéenne, l'algo t'amène progressivement vers des cuisines proches, pas vers un plat thaï sorti de nulle part.</p>
-              <p>L'autre contrainte forte : l'app fonctionne entièrement hors-ligne via SQLite. Pas de connexion, pas de latence, mais aussi pas le droit de se permettre des requêtes lourdes qui videraient la batterie. J'ai donc bossé sur l'optimisation des requêtes SQL pour que ça reste fluide sur n'importe quel téléphone. À la fin, on a livré une app complète avec un Éco-Score par recette.</p>
+              <p>
+                MIAAM, c'est une app qu'on a conçue en équipe pour aider les gens à ne plus gaspiller leurs ingrédients. L'idée de départ est simple : tu rentres ce que t'as dans le frigo, l'app te propose des recettes adaptées à tes goûts et à tes allergies. Mais derrière cette simplicité, il y avait pas mal de défis techniques.
+              </p>
+              <p>
+                Mon travail a porté sur l'algorithme de recommandation. Le problème : comment proposer des recettes variées et pertinentes sans déstabiliser l'utilisateur avec des suggestions trop exotiques ? J'ai développé une topologie culturelle mondiale qui mappe plus de 100 cuisines et crée des ponts logiques entre elles. Si tu aimes la cuisine méditerranéenne, l'algo t'amène progressivement vers des cuisines proches, pas vers un plat thaï sorti de nulle part.
+              </p>
+              <p>
+                L'autre contrainte forte : l'app fonctionne entièrement hors-ligne via SQLite. Pas de connexion, pas de latence, mais aussi pas le droit de se permettre des requêtes lourdes qui videraient la batterie. J'ai donc bossé sur l'optimisation des requêtes SQL pour que ça reste fluide sur n'importe quel téléphone. À la fin, on a livré une app complète avec un Éco-Score par recette. Propre, fonctionnelle, et utile.
+              </p>
               <div className="tags" style={{ marginTop: '1rem' }}>
                 <span className="tag">Flutter</span>
                 <span className="tag">SQLite</span>
@@ -429,10 +441,12 @@ const Portfolio = () => {
                 </ul>
               </div>
             </div>
+
             <div className="card" style={{ marginTop: '1.5rem' }}>
               <h4>Ma valeur ajoutée</h4>
               <p>Mon atout principal est ma double compétence : <strong>Développement Full Stack + Cybersécurité/Infrastructure</strong>. Cette transversalité me permet d'avoir une vision globale du cycle de vie d'une application, depuis sa conception logicielle jusqu'à son déploiement réseau et sa sécurisation face aux attaques.</p>
             </div>
+
             <h3>Auto-évaluation des Compétences (BUT Informatique)</h3>
             <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>Synthèse de ma progression sur les 3 ans de formation, à travers les projets SAÉ et les stages.</p>
             <table className="eval-table">
@@ -480,8 +494,12 @@ const Portfolio = () => {
                 <span className="badge-year">Collège</span>
               </div>
               <p style={{ color: 'var(--text-muted)', marginTop: '0.3rem' }}><em>Garges-lès-Gonesse (95)</em></p>
-              <p>Le collège, c'est là où tout commence. À Henri Wallon, j'ai découvert les premières bases qui allaient finalement orienter toute ma trajectoire. C'est à cette période que j'ai eu mon premier ordinateur, et que cette curiosité naturelle pour "comment ça marche" a vraiment pris forme. Je passais des heures à bidouiller, tester, comprendre. Je ne savais pas encore que ça deviendrait mon métier, mais le déclic était là.</p>
-              <p>Au-delà de l'informatique, le collège m'a surtout appris à travailler avec les autres. J'ai développé un sens du collectif assez tôt, que ce soit sur les projets de classe ou dans les activités parascolaires. Ce goût pour le travail en équipe, je le retrouve encore aujourd'hui dans chacun de mes projets universitaires.</p>
+              <p>
+                Le collège, c'est là où tout commence. À Henri Wallon, j'ai découvert les premières bases qui allaient finalement orienter toute ma trajectoire. C'est à cette période que j'ai eu mon premier ordinateur, et que cette curiosité naturelle pour "comment ça marche" a vraiment pris forme. Je passais des heures à bidouiller, tester, comprendre. Je ne savais pas encore que ça deviendrait mon métier, mais le déclic était là.
+              </p>
+              <p>
+                Au-delà de l'informatique, le collège m'a surtout appris à travailler avec les autres. J'ai développé un sens du collectif assez tôt, que ce soit sur les projets de classe ou dans les activités parascolaires. Ce goût pour le travail en équipe, je le retrouve encore aujourd'hui dans chacun de mes projets universitaires.
+              </p>
             </div>
 
             <div className="card" style={{ borderLeft: '4px solid var(--accent)', paddingLeft: '1.5rem' }}>
@@ -490,8 +508,12 @@ const Portfolio = () => {
                 <span className="badge-year">Lycée - Obtenu 2023</span>
               </div>
               <p style={{ color: 'var(--text-muted)', marginTop: '0.3rem' }}><em>Garges-lès-Gonesse (95)</em></p>
-              <p>J'ai choisi la filière STI2D (Sciences et Technologies de l'Industrie et du Développement Durable) parce que c'était la voie qui se rapprochait le plus de ce que j'aimais : la technique, la conception, comprendre comment les systèmes fonctionnent. C'est un bac exigeant, avec beaucoup de travaux pratiques et de projets concrets, et ça m'a vraiment convenu. J'ai toujours mieux appris en faisant qu'en écoutant.</p>
-              <p>Le lycée Simone de Beauvoir m'a aussi donné une première culture de la rigueur technique. On apprenait à réfléchir en ingénieur, à poser les problèmes correctement avant de chercher des solutions. C'est une façon de penser que j'ai gardée et qui me sert encore aujourd'hui, autant en développement qu'en cybersécurité. Et c'est là que j'ai décidé de m'orienter vers l'informatique plutôt que vers d'autres filières techniques : l'immatériel m'attirait plus que le hardware.</p>
+              <p>
+                J'ai choisi la filière STI2D (Sciences et Technologies de l'Industrie et du Développement Durable) parce que c'était la voie qui se rapprochait le plus de ce que j'aimais : la technique, la conception, comprendre comment les systèmes fonctionnent. C'est un bac exigeant, avec beaucoup de travaux pratiques et de projets concrets, et ça m'a vraiment convenu. J'ai toujours mieux appris en faisant qu'en écoutant.
+              </p>
+              <p>
+                Le lycée Simone de Beauvoir m'a aussi donné une première culture de la rigueur technique. On apprenait à réfléchir en ingénieur, à poser les problèmes correctement avant de chercher des solutions. C'est une façon de penser que j'ai gardée et qui me sert encore aujourd'hui, autant en développement qu'en cybersécurité. Et c'est là que j'ai décidé de m'orienter vers l'informatique plutôt que vers d'autres filières techniques : l'immatériel m'attirait plus que le hardware.
+              </p>
             </div>
 
             <div className="card" style={{ borderLeft: '4px solid var(--accent)', paddingLeft: '1.5rem' }}>
@@ -500,10 +522,21 @@ const Portfolio = () => {
                 <span className="badge-year">2023 - 2026</span>
               </div>
               <p style={{ color: 'var(--text-muted)', marginTop: '0.3rem' }}><em>Université Sorbonne Paris Nord, Villetaneuse (93)</em></p>
-              <p>Intégrer le BUT Informatique à Villetaneuse en 2023, c'était un vrai choix réfléchi. Je voulais une formation courte mais dense, avec une forte composante pratique et une reconnaissance professionnelle rapide. Le BUT, c'est exactement ça : trois ans qui combinent du développement, des réseaux, de la gestion de projet, de la base de données, du système. Un tour complet du métier d'informaticien.</p>
-              <p>La première année a été un choc de rythme. On passe du lycée, où on a du temps, à un programme très chargé avec des projets en permanence. J'ai mis quelques semaines à trouver mes marques, mais une fois lancé, j'ai vraiment pris goût à la pédagogie par les SAÉ (Situations d'Apprentissage et d'Évaluation). Le principe : on nous donne un projet à réaliser, et on apprend les notions théoriques en les appliquant directement. Pour moi qui apprends mieux en pratiquant, c'était idéal.</p>
-              <p>Ces trois années m'ont donné une vision globale du monde informatique que je n'aurais pas eue ailleurs. J'ai touché à tout : du développement web et mobile, à l'administration système et réseau, en passant par les bases de données, la gestion de projet en méthode Agile, et même les bases de la cybersécurité. C'est cette transversalité qui fait aujourd'hui ma force.</p>
-              <p>En juin 2026, je termine ce cycle avec un bilan que je juge positif, malgré des hauts et des bas. J'aurais pu être plus régulier sur certaines matières théoriques, je le reconnais. Mais les compétences que je retire de ces trois ans, techniques comme humaines, sont solides et directement applicables. La suite ? Une école d'ingénieurs, avec en ligne de mire la cybersécurité.</p>
+              <p>
+                Intégrer le BUT Informatique à Villetaneuse en 2023, c'était un vrai choix réfléchi. Je voulais une formation courte mais dense, avec une forte composante pratique et une reconnaissance professionnelle rapide. Le BUT, c'est exactement ça : trois ans qui combinent du développement, des réseaux, de la gestion de projet, de la base de données, du système... Un tour complet du métier d'informaticien.
+              </p>
+              <p>
+                La première année a été un choc de rythme. On passe du lycée, où on a du temps, à un programme très chargé avec des projets en permanence. J'ai mis quelques semaines à trouver mes marques, mais une fois lancé, j'ai vraiment pris goût à la pédagogie par les SAÉ (Situations d'Apprentissage et d'Évaluation). Le principe : on nous donne un projet à réaliser, et on apprend les notions théoriques en les appliquant directement. Pour moi qui apprends mieux en pratiquant, c'était idéal.
+              </p>
+              <p>
+                Ces trois années m'ont donné une vision globale du monde informatique que je n'aurais pas eue ailleurs. J'ai touché à tout : du développement web et mobile, à l'administration système et réseau, en passant par les bases de données, la gestion de projet en méthode Agile, et même les bases de la cybersécurité. C'est cette transversalité qui fait aujourd'hui ma force, et qui m'a permis de mener des projets aussi variés qu'une app mobile Flutter, un générateur de diagrammes Python piloté par IA, et un bot d'automatisation pour une auto-école.
+              </p>
+              <p>
+                L'IUT de Villetaneuse, c'est aussi une équipe pédagogique impliquée. Des enseignants-chercheurs comme Haïfa Zargayouna ou Jean-Christophe Dubacq qui encadrent des projets ambitieux et poussent vraiment les étudiants à aller au fond des choses. Ce cadre m'a aidé à progresser, même sur les matières qui ne m'attiraient pas naturellement.
+              </p>
+              <p>
+                En juin 2026, je termine ce cycle avec un bilan que je juge positif, malgré des hauts et des bas. J'aurais pu être plus régulier sur certaines matières théoriques, je le reconnais. Mais les compétences que je retire de ces trois ans, techniques comme humaines, sont solides et directement applicables. La suite ? Une école d'ingénieurs, avec en ligne de mire la cybersécurité.
+              </p>
             </div>
           </div>
         );
@@ -519,16 +552,22 @@ const Portfolio = () => {
               </div>
               <div className="card">
                 <h4>Mes axes de progression</h4>
-                <p>Ma principale difficulté a été de rester aussi investi dans les matières qui ne me passionnaient pas au premier abord, les cours plus théoriques, moins tournés vers la pratique. J'ai compris qu'un bon ingénieur ne peut pas se permettre de choisir ce qu'il traite sérieusement. C'est un réflexe que j'ai vraiment travaillé sur cette fin de cursus, et ça se voit dans mes résultats.</p>
+                <p>Ma principale difficulté a été de rester aussi investi dans les matières qui ne me passionnaient pas au premier abord — les cours plus théoriques, moins tournés vers la pratique. J'ai compris qu'un bon ingénieur ne peut pas se permettre de choisir ce qu'il traite sérieusement. C'est un réflexe que j'ai vraiment travaillé sur cette fin de cursus, et ça se voit dans mes résultats.</p>
               </div>
             </div>
 
             <h3>Définition de ma Poursuite d'Études (PPP)</h3>
             <div className="card">
               <h4>Mon choix : École d'Ingénieurs en Informatique</h4>
-              <p>Depuis le début de ma formation, la question de la suite s'est progressivement clarifiée. Le BUT m'a donné une vision large et pratique du métier d'informaticien, mais j'ai envie d'aller plus loin, aussi bien en profondeur technique qu'en capacités managériales. L'école d'ingénieurs m'apparaît comme la meilleure voie pour ça.</p>
-              <p>Mon choix se tourne vers des écoles proposant une spécialisation en <strong>Réseaux et Cybersécurité</strong>, idéalement avec une composante alternance ou des partenariats solides avec l'industrie. Je vise des établissements comme l'EPITA, l'EFREI, l'ESIEA ou encore l'ECE Paris, qui ont la réputation de former des ingénieurs opérationnels rapidement et qui accordent une vraie place à la cybersécurité dans leur cursus.</p>
-              <p>Ce choix est cohérent avec mon objectif à long terme : devenir Pentester. La cybersécurité est un domaine qui évolue très vite et où les certifications comptent autant que le diplôme. Le cycle ingénieur me donnera le cadre académique et les réseaux professionnels pour me lancer sérieusement dans cette spécialisation, tout en continuant à me former en autonomie sur les plateformes comme TryHackMe et Hack The Box.</p>
+              <p>
+                Depuis le début de ma formation, la question de la suite s'est progressivement clarifiée. Le BUT m'a donné une vision large et pratique du métier d'informaticien, mais j'ai envie d'aller plus loin, aussi bien en profondeur technique qu'en capacités managériales. L'école d'ingénieurs m'apparaît comme la meilleure voie pour ça.
+              </p>
+              <p>
+                Mon choix se tourne vers des écoles proposant une spécialisation en <strong>Réseaux et Cybersécurité</strong>, idéalement avec une composante alternance ou des partenariats solides avec l'industrie. Je vise des établissements comme l'EPITA, l'EFREI, l'ESIEA ou encore l'ECE Paris, qui ont la réputation de former des ingénieurs opérationnels rapidement et qui accordent une vraie place à la cybersécurité dans leur cursus.
+              </p>
+              <p>
+                Ce choix est cohérent avec mon objectif à long terme : devenir Pentester. La cybersécurité est un domaine qui évolue très vite et où les certifications comptent autant que le diplôme. Le cycle ingénieur me donnera le cadre académique et les réseaux professionnels pour me lancer sérieusement dans cette spécialisation, tout en continuant à me former en autonomie sur les plateformes comme TryHackMe et Hack The Box.
+              </p>
 
               <h4>Objectif à Court Terme (6 mois)</h4>
               <p>Intégrer une école d'ingénieurs et aborder cette première année avec un socle technique solide. Me positionner rapidement comme un élément impliqué de ma promotion, chercher un projet ou stage en lien avec la cybersécurité dès que possible.</p>
@@ -566,8 +605,7 @@ const Portfolio = () => {
       </header>
 
       <nav className="nav-tabs">
-        <button className={`tab-button ${activeTab === 'accueil' ? 'active' : ''}`} onClick={() => setActiveTab('accueil')}>À propos</button>
-        <button className={`tab-button ${activeTab === 'culture' ? 'active' : ''}`} onClick={() => setActiveTab('culture')}>Veille & Culture</button>
+        <button className={`tab-button ${activeTab === 'accueil' ? 'active' : ''}`} onClick={() => setActiveTab('accueil')}>À propos & Culture</button>
         <button className={`tab-button ${activeTab === 'stage' ? 'active' : ''}`} onClick={() => setActiveTab('stage')}>Stages</button>
         <button className={`tab-button ${activeTab === 'sae' ? 'active' : ''}`} onClick={() => setActiveTab('sae')}>Projets SAÉ</button>
         <button className={`tab-button ${activeTab === 'perso' ? 'active' : ''}`} onClick={() => setActiveTab('perso')}>Projets Persos</button>
