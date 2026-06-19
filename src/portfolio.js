@@ -50,27 +50,27 @@ const Portfolio = () => {
             <div className="card">
               <h4>CTF et pratique du hacking éthique</h4>
               <p>
-                En dehors des cours, je consacre une partie significative de mon temps libre à des plateformes telles que TryHackMe, Root-Me et Hack The Box. Cette pratique ne relève pas d'une simple obligation académique mais constitue une activité que j'apprécie pour elle-même. Les CTF (Capture The Flag) sont des exercices d'intrusion encadrés, menés sur des systèmes volontairement vulnérables, où l'objectif est de récupérer des indices cachés appelés "flags". Cette discipline couvre des domaines variés : exploitation web, reverse engineering, cryptographie ou encore analyse forensique. C'est un exercice exigeant qui demande de la rigueur, mais qui offre une réelle satisfaction intellectuelle lorsque la faille est identifiée après plusieurs heures de recherche.
+                En dehors des cours, je passe une bonne partie de mon temps libre sur des plateformes comme TryHackMe, Root-Me et Hack The Box. Ce n'est pas une contrainte scolaire, c'est une activité que j'apprécie vraiment. Les CTF (Capture The Flag) sont des exercices d'intrusion menés sur des systèmes volontairement vulnérables, où le but est de récupérer des indices cachés appelés "flags". Ça couvre plusieurs domaines : l'exploitation web, le reverse engineering, la cryptographie ou encore l'analyse forensique. C'est exigeant et parfois frustrant, mais quand on trouve la faille après plusieurs heures de recherche, la satisfaction est réelle.
               </p>
               <p>
-                Je participe également à des salons informatiques et à divers événements liés à la cybersécurité. Ces occasions me permettent d'observer les pratiques en vigueur dans le secteur professionnel, d'échanger avec des experts du domaine et de rester au contact d'un milieu en constante évolution.
+                Je participe aussi à des salons informatiques et à des événements liés à la cybersécurité. Ça me permet de voir ce qui se fait concrètement dans le secteur professionnel, d'échanger avec des personnes du métier et de rester au contact d'un domaine qui évolue très vite.
               </p>
             </div>
 
             <div className="card">
               <h4>Ma veille technologique</h4>
               <p>
-                La cybersécurité est un domaine qui évolue rapidement, ce qui impose une veille régulière pour rester à jour. J'ai donc mis en place une routine de suivi structurée autour de plusieurs sources complémentaires. Sur le plan cyber, je consulte les rapports publiés par le CERT-FR, je suis les nouvelles vulnérabilités référencées dans la base CVE, et j'étudie les ressources méthodologiques de l'OWASP afin de mieux comprendre les vecteurs d'attaque les plus courants. Le forum r/netsec sur Reddit constitue également une source pertinente d'échanges techniques entre professionnels. Pour des formats plus accessibles, j'écoute le podcast Le Comptoir Sécu et je suis les contenus vidéo d'Underscore_, qui parvient à vulgariser des sujets complexes sans en sacrifier la rigueur.
+                La cybersécurité change rapidement, ce qui demande de se tenir informé régulièrement. J'ai donc mis en place une routine de veille construite autour de plusieurs sources. Côté cyber, je consulte les rapports du CERT-FR, je suis les nouvelles vulnérabilités référencées dans la base CVE, et j'étudie les ressources de l'OWASP pour mieux comprendre les vecteurs d'attaque les plus courants. Le forum r/netsec sur Reddit est aussi une bonne source d'échanges techniques entre professionnels. Pour des formats plus accessibles, j'écoute le podcast Le Comptoir Sécu et je suis les vidéos d'Underscore_, qui arrive à expliquer des sujets complexes sans perdre en rigueur.
               </p>
               <p>
-                Sur les questions liées à l'intelligence artificielle et au développement, je suis l'évolution des grands modèles de langage via GitHub et des newsletters spécialisées comme TLDR. Cet intérêt s'inscrit autant dans une logique technique que stratégique, notamment au regard des enjeux de souveraineté numérique que ces technologies soulèvent.
+                Sur l'intelligence artificielle et le développement, je suis l'évolution des grands modèles de langage via GitHub et des newsletters comme TLDR. Cet intérêt est autant technique que stratégique, notamment par rapport aux enjeux de souveraineté numérique que ces technologies soulèvent.
               </p>
             </div>
 
             <div className="card">
               <h4>Lectures : les ouvrages du Rabbin des Bois</h4>
               <p>
-                Le Rabbin des Bois est un hacker français qui a choisi de retranscrire son expérience dans deux ouvrages destinés à un public non spécialiste. Ce qui retient l'attention dans cette démarche, c'est la volonté de rendre accessibles des notions techniques complexes sans pour autant en simplifier excessivement le contenu. L'auteur s'appuie sur son parcours personnel pour illustrer des enjeux plus larges liés à la sécurité informatique et à la protection des données, ce qui en fait une lecture aussi formatrice qu'agréable.
+                Le Rabbin des Bois est un hacker français qui a raconté son parcours dans deux livres destinés à un public non spécialiste. Ce qui m'intéresse dans cette démarche, c'est la volonté de rendre accessibles des notions techniques complexes sans trop les simplifier. L'auteur s'appuie sur son expérience personnelle pour illustrer des enjeux plus larges liés à la sécurité informatique et à la protection des données, ce qui en fait une lecture aussi formatrice qu'agréable.
               </p>
 
               <div className="grid-2" style={{ marginTop: '1.5rem' }}>
@@ -83,7 +83,7 @@ const Portfolio = () => {
                   <div>
                     <h5 style={{ margin: '0 0 0.5rem 0' }}>Lève-toi et code — Confessions d'un hacker</h5>
                     <p>
-                      Cet ouvrage retrace le parcours de l'auteur, de ses premières intrusions à ses erreurs de jeunesse, en passant par les zones grises éthiques qu'il a pu traverser. L'intérêt de ce récit réside dans le refus de toute mise en scène héroïque : l'auteur démontre que la pratique du hacking repose avant tout sur la curiosité, la persévérance et un temps d'investigation important consacré à des systèmes que d'autres n'auraient pas pris le temps d'examiner. Cette approche correspond assez fidèlement à ma propre méthode de résolution des problèmes techniques.
+                      Ce livre raconte le parcours de l'auteur, de ses premières intrusions à ses erreurs de jeunesse, en passant par les zones grises éthiques qu'il a pu traverser. Ce qui rend ce récit intéressant, c'est qu'il évite toute mise en scène héroïque : l'auteur montre que le hacking repose avant tout sur la curiosité, la persévérance et beaucoup de temps passé à comprendre des systèmes que d'autres n'auraient pas pris la peine d'examiner. C'est une approche qui correspond assez bien à ma propre façon d'aborder les problèmes techniques.
                     </p>
                   </div>
                 </div>
@@ -96,7 +96,7 @@ const Portfolio = () => {
                   <div>
                     <h5 style={{ margin: '0 0 0.5rem 0' }}>Princesse Data</h5>
                     <p>
-                      Ce second ouvrage adopte une approche différente : il traite de la donnée personnelle, de sa valeur économique, et des mécanismes par lesquels elle est collectée, revendue et exploitée à l'insu des utilisateurs. Bien que le sujet relève directement de la cybersécurité, il est ici présenté sous un angle accessible à un public élargi. L'absence de discours alarmiste constitue un point notable : l'auteur expose les mécanismes en jeu avec rigueur, ce qui favorise une compréhension réelle des enjeux plutôt qu'une réaction anxiogène. Pour quelqu'un que la protection des données et la sécurité des systèmes d'information intéressent particulièrement, il s'agit d'une lecture à la fois utile et stimulante.
+                      Ce second livre aborde les choses différemment. Il traite de la donnée personnelle, de sa valeur économique, et de la façon dont elle est collectée, revendue et exploitée sans qu'on s'en rende compte. C'est un sujet directement lié à la cybersécurité, mais présenté ici sous un angle accessible à un public plus large. Ce qui est notable, c'est l'absence de discours alarmiste : l'auteur explique les mécanismes en jeu avec rigueur, ce qui aide à vraiment comprendre les enjeux plutôt que de simplement s'inquiéter. Pour quelqu'un qui s'intéresse à la protection des données et à la sécurité des systèmes d'information, c'est une lecture à la fois utile et stimulante.
                     </p>
                   </div>
                 </div>
@@ -106,23 +106,23 @@ const Portfolio = () => {
             <div className="card">
               <h4>Ouverture à l'international</h4>
               <p>
-                Dans le domaine de l'informatique, et plus particulièrement de la cybersécurité, se limiter au contexte national constitue une limite significative. Les menaces sont par nature mondiales, les référentiels de sécurité sont majoritairement portés par des organisations américaines ou européennes, et l'essentiel de la documentation technique de qualité est rédigée en anglais. C'est pourquoi je me suis toujours efforcé de m'exposer à un cadre plus large que mon seul environnement local.
+                Dans l'informatique, et encore plus en cybersécurité, se limiter au contexte français est une vraie limite. Les menaces sont mondiales, les référentiels de sécurité sont souvent portés par des organisations américaines ou européennes, et la majorité de la documentation technique de qualité est en anglais. C'est pour ça que j'ai toujours cherché à m'exposer à un cadre plus large que mon seul environnement local.
               </p>
               <p>
-                Ma double culture, le français et le kurde comme langues maternelles, associée à un anglais technique mobilisé quotidiennement sur TryHackMe et dans diverses documentations, m'a permis de développer le réflexe d'aller chercher l'information à sa source, indépendamment de la facilité d'accès.
+                Ma double culture, le français et le kurde comme langues maternelles, associée à un anglais technique que j'utilise au quotidien sur TryHackMe et dans diverses documentations, m'a permis de développer le réflexe d'aller chercher l'information à la source, peu importe la facilité d'accès.
               </p>
               <p>
-                Dans le cadre de la SAÉ S6, j'ai eu l'occasion de travailler sur une comparaison entre DeepSeek, modèle développé en Chine, et les grands modèles américains tels que Claude ou ChatGPT. Cet exercice ne se limitait pas à une dimension purement technique : il m'a conduit à m'interroger sérieusement sur les enjeux de souveraineté numérique, sur les modalités de contrôle des données, et sur les conséquences concrètes du choix d'un outil plutôt qu'un autre. Cette réflexion géopolitique appliquée à la technologie me paraît tout aussi pertinente que les compétences purement techniques.
+                Dans le cadre de la SAÉ S6, j'ai travaillé sur une comparaison entre DeepSeek, un modèle développé en Chine, et les grands modèles américains comme Claude ou ChatGPT. Cet exercice ne se limitait pas à une dimension technique : il m'a amené à réfléchir sérieusement aux enjeux de souveraineté numérique, à qui contrôle les données, et aux conséquences concrètes du choix d'un outil plutôt qu'un autre. Cette réflexion géopolitique appliquée à la technologie me paraît tout aussi importante que les compétences purement techniques.
               </p>
               <p>
-                À terme, je souhaite exercer dans un contexte international, par le biais d'un VIE, d'un stage à l'étranger ou au sein d'une structure multinationale. Cette ambition ne traduit pas une volonté de m'éloigner du contexte français, mais plutôt la conviction qu'un environnement multiculturel modifie favorablement la manière d'aborder et de résoudre les problèmes, ce qui correspond à ma façon de travailler.
+                À terme, je souhaite exercer dans un contexte international, via un VIE, un stage à l'étranger ou une structure multinationale. Cette ambition ne traduit pas une volonté de m'éloigner du contexte français, mais plutôt la conviction qu'un environnement multiculturel change favorablement la façon d'aborder et de résoudre les problèmes, ce qui correspond à ma manière de travailler.
               </p>
             </div>
 
             <div className="card">
               <h4>Visite du Musée des Arts et Métiers</h4>
               <p>
-                Dans le cadre de ma formation, j'ai eu l'occasion de visiter le Musée des Arts et Métiers à Paris. Ce qui retient particulièrement l'attention, c'est de constater que l'innovation technique a toujours reposé sur les mêmes fondamentaux : l'observation de la nature, la compréhension de ses mécanismes, et leur transposition dans des dispositifs créés par l'homme. L'Avion 3 de Clément Ader en constitue un exemple particulièrement éloquent : il s'agit d'une machine conçue en s'inspirant directement de la morphologie de la chauve-souris. Cette démarche d'un ingénieur du XIXe siècle, qui procède en quelque sorte à une rétro-ingénierie de la nature, n'est pas si éloignée de celle que l'on adopte lorsqu'on analyse un système pour en comprendre le fonctionnement.
+                Dans le cadre de ma formation, j'ai eu l'occasion de visiter le Musée des Arts et Métiers à Paris. Ce qui m'a marqué, c'est de constater que l'innovation technique a toujours reposé sur les mêmes bases : observer la nature, comprendre ses mécanismes, et les transposer dans des dispositifs créés par l'homme. L'Avion 3 de Clément Ader en est un exemple particulièrement parlant : c'est une machine conçue en s'inspirant directement de la morphologie de la chauve-souris. Cette démarche d'un ingénieur du XIXe siècle, qui fait en quelque sorte de la rétro-ingénierie sur la nature, n'est pas si éloignée de celle qu'on adopte quand on analyse un système pour en comprendre le fonctionnement.
               </p>
               <div className="image-gallery" style={{ gridTemplateColumns: '1fr 1fr' }}>
                 <div className="gallery-item">
